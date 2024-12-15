@@ -3,7 +3,7 @@
 Question: An organization wants to implement a serverless workflow to solve a business problem. One of the requirements is the solution needs to use a designer-first (declarative) development model. Which of the choices below meets the requirements?
 
 - [ ] Azure Functions
-- [x] Azure Logic Apps
+- [ ] Azure Logic Apps
 - [ ] WebJobs
 
 Answer: Azure Logic Apps enables serverless workloads and uses a designer-first (declarative) development model.
@@ -13,7 +13,7 @@ Answer: Azure Logic Apps enables serverless workloads and uses a designer-first 
 Question: What is a key benefit of the Flex Consumption plan in Azure Functions hosting options?
 
 - [ ] It provides fully predictable billing and manual scale instances.
-- [x] It offers high scalability with compute choices, virtual networking, and pay-as-you-go billing.
+- [ ] It offers high scalability with compute choices, virtual networking, and pay-as-you-go billing.
 - [ ] It allows for the packaging of custom libraries with function code.
 
 Answer: The Flex Consumption plan provides high scalability, compute choices, virtual networking, and pay-as-you-go billing.  
@@ -26,7 +26,7 @@ Question: What is the maximum number of instances for a function app on a Consum
 
 - [ ] 300
 - [ ] 100
-- [x] 200
+- [ ] 200
 
 Answer: The maximum number of instances for a function app on a Consumption plan in Windows is 200.  
 300 is the maximum number of instances for Container Apps.  
@@ -39,7 +39,7 @@ Question: You need your Azure Function to use different connection strings when 
 - [ ] Store connection strings in Key Vault and read them in your function
 - [ ] Create two versions of the function, one for production and one for local development
 - [ ] Store connection string into `host.json` file
-- [x] Store connection string into `local.settings.json` file
+- [ ] Store connection string into `local.settings.json` file
 
 Answer: When the code is executed in your machine, it will read the `local.settings.json` file. When it is run on Azure, the configuration is picked up from the values set in the configuration settings section of the function.
 
@@ -47,7 +47,7 @@ Answer: When the code is executed in your machine, it will read the `local.setti
 
 Question: You are tasked with altering the `host.json` file to adjust runtime settings for a function app, aiming to keep the process as straightforward as possible. What method would you utilize?
 
-- [x] Azure Portal
+- [ ] Azure Portal
 - [ ] Visual Studio Code or other text editor
 - [ ] Azure Powershell cmdlets
 - [ ] Azure CLI commands
@@ -62,7 +62,7 @@ Azure Resource Manager (ARM) templates can be used to manage Azure resources, bu
 
 Question: Which of the following is a benefit of stateless design in cloud applications?
 
-- [x] Stateless applications are easier to scale horizontally.
+- [ ] Stateless applications are easier to scale horizontally.
 - [ ] Stateless applications are more secure because they don't use databases.
 - [ ] Stateless applications are faster because they use less memory.
 - [ ] Stateless applications are cheaper because they don't require any storage.
@@ -75,7 +75,7 @@ Question: You are developing a serverless function that needs to maintain some i
 
 - [ ] Store the state in a global variable in the function.
 - [ ] Store the state in a cookie.
-- [x] Store the state in a database or other external storage.
+- [ ] Store the state in a database or other external storage.
 - [ ] Stateless functions cannot maintain state.
 
 Answer: Store the state in a database or other external storage. Because serverless functions are stateless, they do not maintain any information between requests. To manage state, you can store it in an external storage system like a database.
@@ -84,7 +84,7 @@ Answer: Store the state in a database or other external storage. Because serverl
 
 Question: You are developing a web application that needs to maintain user sessions. The application is deployed on multiple servers for load balancing. What is a common issue you might encounter due to the stateless nature of HTTP, and how can it be addressed?
 
-- [x] Users might lose their session data when their requests are handled by different servers. This can be addressed by implementing sticky sessions or by storing session data in a shared database.
+- [ ] Users might lose their session data when their requests are handled by different servers. This can be addressed by implementing sticky sessions or by storing session data in a shared database.
 - [ ] Users might not be able to make multiple requests at the same time. This can be addressed by implementing asynchronous request handling.
 - [ ] Users might not be able to access the application if one of the servers goes down. This can be addressed by implementing a failover mechanism.
 - [ ] Users might experience slow response times if the servers are located in different geographical locations. This can be addressed by implementing a content delivery network (CDN).
@@ -97,7 +97,7 @@ Question: Your web application is deployed across multiple servers for load bala
 
 - [ ] Implementing a Content Delivery Network (CDN)
 - [ ] Implementing Sticky Sessions
-- [x] Implementing a Failover Mechanism
+- [ ] Implementing a Failover Mechanism
 - [ ] Implementing Asynchronous Request Handling
 
 Answer: Implementing a Failover Mechanism. A failover mechanism can automatically redirect traffic to a backup server if the primary server fails, ensuring high availability.
@@ -107,7 +107,7 @@ Answer: Implementing a Failover Mechanism. A failover mechanism can automaticall
 Question: You are developing a global web application with users from different geographical locations. Some users are experiencing slow response times due to the distance between their location and the server's location. What can be implemented to improve the response times for these users?
 
 - [ ] Implementing Sticky Sessions
-- [x] Implementing a Content Delivery Network (CDN)
+- [ ] Implementing a Content Delivery Network (CDN)
 - [ ] Implementing a Failover Mechanism
 - [ ] Implementing Asynchronous Request Handling
 
@@ -118,7 +118,7 @@ Answer: Implementing a Content Delivery Network (CDN). A CDN can cache the appli
 Question: Which of the following Azure Functions hosting plans is best when predictive scaling and costs are required?
 
 - [ ] Functions Premium Plan
-- [x] Dedicated plan
+- [ ] Dedicated plan
 - [ ] Consumption plan
 
 Answer: Dedicated plans run in App service which supports setting autoscaling rules based on predictive usage.
@@ -219,27 +219,27 @@ az functionapp config set --name $functionAppName --resource-group $resourceGrou
 
 Question: Your company is deploying an Azure Function that will be requiring advanced features like Azure Virtual Network (VNet) for secure and reliable network connectivity to Azure resources. Which of the following plans support VNet?
 
-- [x] EP1
-- [x] EP2
-- [x] EP3
+- [ ] EP1
+- [ ] EP2
+- [ ] EP3
 - [ ] F1
 - [ ] D1
 - [ ] B1
 - [ ] B2
 - [ ] B3
-- [x] S1
-- [x] P1V2
-- [x] P2V2
-- [x] P3V2
-- [x] P1V3
-- [x] P2V3
-- [x] P3V3
-- [x] I1
-- [x] I2
-- [x] I3
-- [x] I1V2
-- [x] I2V2
-- [x] I3V2
+- [ ] S1
+- [ ] P1V2
+- [ ] P2V2
+- [ ] P3V2
+- [ ] P1V3
+- [ ] P2V3
+- [ ] P3V3
+- [ ] I1
+- [ ] I2
+- [ ] I3
+- [ ] I1V2
+- [ ] I2V2
+- [ ] I3V2
 
 Answer:
 
@@ -266,19 +266,19 @@ Answer: `Consumption` and `Premium` plans can be more cost-efficient if you have
 
 Question: Which triggers in Azure Functions are supported on Consumption plan:
 
-- [x] Blob storage
-- [x] Azure Cosmos DB
-- [x] Event Grid
-- [x] Event Hubs
-- [x] IoT Hub
+- [ ] Blob storage
+- [ ] Azure Cosmos DB
+- [ ] Event Grid
+- [ ] Event Hubs
+- [ ] IoT Hub
 - [ ] Notification Hubs
-- [x] Queue storage
-- [x] Service Bus
+- [ ] Queue storage
+- [ ] Service Bus
 - [ ] RabbitMQ
-- [x] SignalR
+- [ ] SignalR
 - [ ] Kafka
 - [ ] Table storage
-- [x] Timer
+- [ ] Timer
 
 Answer: `Table storage` and `Notification Hubs` are not valid triggers. `RabbitMQ` and `Kafka` are not supported on Consumption plan.
 
@@ -290,9 +290,9 @@ Question: Which of the following plans does not support VNet?
 - [ ] Standard App Service plan
 - [ ] Premium App Service plan
 - [ ] Isolated App Service plan
-- [x] Free App Service plan
-- [x] Shared App Service plan
-- [x] Basic App Service plan
+- [ ] Free App Service plan
+- [ ] Shared App Service plan
+- [ ] Basic App Service plan
 
 Answer: VNet is supported only in Premium plan, Standard App Service plan, Premium App Service plan, Isolated App Service plan
 
@@ -301,7 +301,7 @@ Answer: VNet is supported only in Premium plan, Standard App Service plan, Premi
 Question: Which of the following choices is required for a function to run?
 
 - [ ] Binding
-- [x] Trigger
+- [ ] Trigger
 - [ ] Both triggers and bindings
 
 Answer: A trigger defines how a function is invoked and a function must have exactly one trigger.
@@ -310,7 +310,7 @@ Answer: A trigger defines how a function is invoked and a function must have exa
 
 Question: Which of the following choices supports both the `in` and `out` direction settings?
 
-- [x] Bindings
+- [ ] Bindings
 - [ ] Trigger
 - [ ] Connection value
 
@@ -320,20 +320,20 @@ Answer: Input and output bindings use `in` and `out`.
 
 Question: Which of the following can trigger an Azure Function:
 
-- [x] Blob storage
-- [x] Azure Cosmos DB
-- [x] Event Grid
-- [x] Event Hubs
-- [x] HTTP & webhooks
-- [x] IoT Hub
+- [ ] Blob storage
+- [ ] Azure Cosmos DB
+- [ ] Event Grid
+- [ ] Event Hubs
+- [ ] HTTP & webhooks
+- [ ] IoT Hub
 - [ ] Mobile Apps
 - [ ] Notification Hubs
-- [x] Queue storage
+- [ ] Queue storage
 - [ ] SendGrid
-- [x] Service Bus
-- [x] SignalR
+- [ ] Service Bus
+- [ ] SignalR
 - [ ] Table storage
-- [x] Timer
+- [ ] Timer
 
 Answer: `Table storage`, `Mobile Apps`, `Notification Hubs`, `SendGrid`, and `Twilio` are not valid triggers.
 
@@ -341,19 +341,19 @@ Answer: `Table storage`, `Mobile Apps`, `Notification Hubs`, `SendGrid`, and `Tw
 
 Question: Which of the following can be input binding in an Azure Function:
 
-- [x] Blob storage
-- [x] Azure Cosmos DB
+- [ ] Blob storage
+- [ ] Azure Cosmos DB
 - [ ] Event Grid
 - [ ] Event Hubs
 - [ ] HTTP & webhooks
 - [ ] IoT Hub
-- [x] Mobile Apps
+- [ ] Mobile Apps
 - [ ] Notification Hubs
 - [ ] Queue storage
 - [ ] SendGrid
 - [ ] Service Bus
-- [x] SignalR
-- [x] Table storage
+- [ ] SignalR
+- [ ] Table storage
 - [ ] Timer
 
 Answer: You can only read from objects that store data, not queues.
@@ -362,19 +362,19 @@ Answer: You can only read from objects that store data, not queues.
 
 Question: Which of the following can be output binding in an Azure Function:
 
-- [x] Blob storage
-- [x] Azure Cosmos DB
-- [x] Event Grid
-- [x] Event Hubs
-- [x] HTTP & webhooks
+- [ ] Blob storage
+- [ ] Azure Cosmos DB
+- [ ] Event Grid
+- [ ] Event Hubs
+- [ ] HTTP & webhooks
 - [ ] IoT Hub
-- [x] Mobile Apps
-- [x] Notification Hubs
-- [x] Queue storage
-- [x] SendGrid
-- [x] Service Bus
-- [x] SignalR
-- [x] Table storage
+- [ ] Mobile Apps
+- [ ] Notification Hubs
+- [ ] Queue storage
+- [ ] SendGrid
+- [ ] Service Bus
+- [ ] SignalR
+- [ ] Table storage
 - [ ] Timer
 
 Answer: Everything but `Timer` and `IoT Hub`.
@@ -547,7 +547,7 @@ public static void Run(
 Question: You are tasked with developing an Azure Function that will be triggered by Azure Blob storage. The function should only be triggered when `.jpg` files are added to a container named `images`. Which of the following filter criteria for `path` in the `function.json` file would meet the requirement?
 
 - [ ] `images/jpg`
-- [x] `images/{name}.jpg`
+- [ ] `images/{name}.jpg`
 - [ ] `images/{name}/jpg`
 - [ ] `images/*.jpg`
 - [ ] `images/jpg/{name}`
@@ -921,7 +921,7 @@ public static async Task<IActionResult> Run(
 Question: How to define an HTTP output binding in Azure Function?
 
 - [ ] Using `[Http(AuthorizationLevel.Function, "post", Route = null)]` parameter
-- [x] Returning `Task<IActionResult>` result from the function
+- [ ] Returning `Task<IActionResult>` result from the function
 - [ ] There is only HTTP input binding, output binding does not exist
 
 Answer: This binding requires an HTTP trigger and allows you to customize the response associated with the trigger's request.
@@ -1015,8 +1015,8 @@ Answer: 30 \*/2 1-15 6-8 1-5
 
 Question: You need to create an Azure Function that is triggered every 5 minutes. Which of the following cron schedules can be used?
 
-- [x] `0 */5 * * * *`
-- [x] `*/5 * * * *`
+- [ ] `0 */5 * * * *`
+- [ ] `*/5 * * * *`
 - [ ] `*/5 * * * * *`
 - [ ] `* */5 * * *`
 - [ ] `0 5 * * * *`
@@ -1032,14 +1032,14 @@ Question: In your e-commerce system, you've built two Azure Functions to handle 
 
 Given this setup, which triggers and bindings would you use in the `OrderProcessingFunction`? There may be more than one correct answer.
 
-- [x] ServiceBus trigger binding
+- [ ] ServiceBus trigger binding
 - [ ] HTTP trigger binding
 - [ ] Blob trigger binding
 - [ ] Cosmos DB trigger binding
 - [ ] Blob input binding
-- [x] Blob output binding
+- [ ] Blob output binding
 - [ ] Blob input output binding
-- [x] Cosmos DB input binding
+- [ ] Cosmos DB input binding
 - [ ] Cosmos DB output binding
 - [ ] Cosmos DB input output binding
 
@@ -1052,10 +1052,10 @@ Question: In your e-commerce system, you've built two Azure Functions to handle 
 Given this setup, which bindings are you most likely to use in the `OrderRetrievalFunction`? There may be more than one correct answer.
 
 - [ ] ServiceBus trigger binding
-- [x] HTTP trigger binding
+- [ ] HTTP trigger binding
 - [ ] Blob trigger binding
 - [ ] Cosmos DB trigger binding
-- [x] Blob input binding
+- [ ] Blob input binding
 - [ ] Blob output binding
 - [ ] Blob input output binding
 - [ ] Cosmos DB input binding
@@ -1069,7 +1069,7 @@ Answer: The `OrderRetrievalFunction` is invoked on-demand via a web request, whi
 Question: How often are new instances allocated for HTTP triggers?
 
 - [ ] As soon as there is a demand for them
-- [x] Once a second
+- [ ] Once a second
 - [ ] Every 30 seconds
 - [ ] Every minute
 
@@ -1079,7 +1079,7 @@ Answer: HTTP triggers get new instances at most every second. Non-HTTP triggers 
 
 Question: What method should you use to obtain function keys, example: `https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Web/sites/{name}/{scope}/{host-or-function-name}/listkeys?api-version=2022-03-01`
 
-- [x] POST
+- [ ] POST
 - [ ] GET
 - [ ] PUT
 
@@ -1091,7 +1091,7 @@ Question: What method should you use to create a function key, example: `https:/
 
 - [ ] POST
 - [ ] GET
-- [x] PUT
+- [ ] PUT
 
 Answer: `PUT`, huh...
 
@@ -1099,10 +1099,10 @@ Answer: `PUT`, huh...
 
 Question: How do you configure custom handlers in Azure Functions?
 
-- [x] Modify `host.json` to include the `customHandler` property with the executable path and arguments.
+- [ ] Modify `host.json` to include the `customHandler` property with the executable path and arguments.
 - [ ] Modify `local.settings.json` to include the `customHandler` property with the executable path and arguments.
 - [ ] Add `"FUNCTIONS_WORKER_RUNTIME": "node"` in `local.settings.json`.
-- [x] Set `"FUNCTIONS_WORKER_RUNTIME": "custom"` in `local.settings.json`.
+- [ ] Set `"FUNCTIONS_WORKER_RUNTIME": "custom"` in `local.settings.json`.
 - [ ] Add `"FUNCTIONS_WORKER_RUNTIME": "node"` in `host.json`.
 - [ ] Set `"FUNCTIONS_WORKER_RUNTIME": "custom"` in `host.json`.
 - [ ] Add `"FUNCTIONS_RUNTIME": "node"` in `local.settings.json`.
@@ -1126,7 +1126,7 @@ Question: You're working on a collection of Azure Functions and have recently de
 
 - [ ] `local.function.json`
 - [ ] `function.json`
-- [x] `host.json`
+- [ ] `host.json`
 - [ ] `app.json`
 - [ ] `appsettings.json`
 
@@ -1136,7 +1136,7 @@ Answer: The logging configurations for Azure Functions are set in the `host.json
 
 Question: You have an Azure Function set up in your Azure account. This Function pulls data from an Azure Storage Queue and deposits it into an Azure SQL Database. Sometimes, the function fails and shows a "Timeout expired" error. This could be because the connection pool has reached its limit. How can you address this problem?
 
-- [x] Tweak the batchSize value in the `host.json` file
+- [ ] Tweak the batchSize value in the `host.json` file
 - [ ] Adjust the `queueMax` setting in the function.json file
 - [ ] Switch to a Timer-based trigger
 - [ ] Upgrade to a Premium-tier App Service Plan
@@ -1147,11 +1147,11 @@ Answer: The root cause could be the function running too many tasks at once, usi
 
 Question: You are developing an application using Azure Functions to handle HTTP requests. The programming language you wish to use is not natively supported by Azure Functions. You decide to use a custom handler for this purpose. Which of the following custom handler web servers would meet the requirements of custom handlers?
 
-- [x] Node.js Express server with a startup time of 45 seconds
+- [ ] Node.js Express server with a startup time of 45 seconds
 - [ ] Python Flask server with a startup time of 65 seconds
-- [x] Ruby on Rails server with a startup time of 55 seconds
+- [ ] Ruby on Rails server with a startup time of 55 seconds
 - [ ] Java Spring Boot server with a startup time of 70 seconds
-- [x] Go HTTP server with a startup time of 50 seconds
+- [ ] Go HTTP server with a startup time of 50 seconds
 - [ ] ArnoldC server with a startup time of 90 seconds
 
 Answer: The requirement is to have a custom handler web server that starts up in less than 60 seconds.
