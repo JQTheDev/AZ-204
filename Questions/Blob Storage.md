@@ -4,7 +4,7 @@ Question: Which of the following types of blobs are used to store virtual hard d
 
 - [ ] Block blobs
 - [ ] Append blobs
-- [x] Page blobs
+- [ ] Page blobs
 
 Answer: Page blobs store random access files up to 8 TB in size, and are used to store virtual hard drive (VHD) files and serve as disks for Azure virtual machines.  
 Append blobs are optimized for data append operations.  
@@ -14,7 +14,7 @@ Block blobs are made up of blocks of data that can be managed individually.
 
 Question: Which of the following types of storage accounts is recommended for most scenarios using Azure Storage?
 
-- [x] General-purpose v2
+- [ ] General-purpose v2
 - [ ] General-purpose v1
 - [ ] FileStorage
 
@@ -28,7 +28,7 @@ Question: What is the maximum size of data that a block blob in Azure Blob stora
 
 - [ ] 8-TB
 - [ ] Unlimited
-- [x] 190.7-TiB
+- [ ] 190.7-TiB
 
 Answer: Block blobs in Azure Blob storage can store up to about 190.7-TiB of data.
 
@@ -36,7 +36,7 @@ Answer: Block blobs in Azure Blob storage can store up to about 190.7-TiB of dat
 
 Question: What are the two versions of client-side encryption available in the Azure Blob Storage and Queue Storage client libraries?
 
-- [x] Version 1 uses Cipher Block Chaining (CBC) mode with AES and Version 2 uses Galois/Counter Mode (GCM) mode with AES
+- [ ] Version 1 uses Cipher Block Chaining (CBC) mode with AES and Version 2 uses Galois/Counter Mode (GCM) mode with AES
 - [ ] Version 1 uses Advanced Encryption Standard (AES) and Version 2 uses Federal Information Processing Standards (FIPS)
 - [ ] Version 1 uses Galois/Counter Mode (GCM) mode with AES and Version 2 uses Cipher Block Chaining (CBC) mode with AES
 
@@ -47,7 +47,7 @@ Answer: Version 1 uses CBC mode with AES, while Version 2 uses GCM mode with AES
 Question: Which access tier is considered to be offline and can't be read or modified?
 
 - [ ] Cool
-- [x] Archive
+- [ ] Archive
 - [ ] Hot
 
 Answer: Blobs in the archive tier must be rehydrated to either the hot or cool tier before it can be read or modified.
@@ -57,7 +57,7 @@ Answer: Blobs in the archive tier must be rehydrated to either the hot or cool t
 Question: Which of the following storage account types supports lifecycle policies?
 
 - [ ] General Purpose v1
-- [x] General Purpose v2
+- [ ] General Purpose v2
 - [ ] FileStorage
 
 Answer: Azure Blob storage lifecycle management offers a rich, rule-based policy for General Purpose v2 and Blob storage accounts.  
@@ -67,11 +67,11 @@ General Purpose v1 accounts need to be upgraded to v2 before lifecycle policies 
 
 Question: Which of the following standard HTTP headers are supported for both containers and blobs when setting properties by using REST?
 
-- [x] Last-Modified
+- [ ] Last-Modified
 - [ ] Content-Length
 - [ ] Origin
 - [ ] Cache-Control
-- [x] ETag
+- [ ] ETag
 
 Answer: Last-Modified and ETag are supported on both containers and blobs.  
 Content-Length and Cache-Control are only supported on blobs.
@@ -81,7 +81,7 @@ Content-Length and Cache-Control are only supported on blobs.
 Question: Which of the following classes of the Azure Storage client library for .NET allows you to manipulate both Azure Storage containers and their blobs?
 
 - [ ] BlobClient
-- [x] BlobContainerClient
+- [ ] BlobContainerClient
 - [ ] BlobUriBuilder
 
 Answer: The BlobContainerClient can be used to manipulate both containers and blobs.  
@@ -95,7 +95,7 @@ Question: You arrive at work donned in your favorite furry costume and discover 
 - [ ] Your choice of unconventional office attire: a furry costume (you did nothing wrong).
 - [ ] You erred in your task; you were supposed to set the access level of the entire `$web` container to private.
 - [ ] To make the site inaccessible to users, you should have set the entire storage account to private.
-- [x] You have a fundamental misunderstanding of how things function within Azure Static Site hosting.
+- [ ] You have a fundamental misunderstanding of how things function within Azure Static Site hosting.
 
 Answer: In this situation, to make the static website inaccessible, you need to turn off the Static Website hosting feature from your Azure Storage account. You know nothing...
 
@@ -152,7 +152,7 @@ Question: How frequently are Azure Storage lifecycle management policy rules eva
 
 - [ ] Every time a new blob is added or an existing blob is modified.
 - [ ] Once every hour.
-- [x] Once a day
+- [ ] Once a day
 - [ ] Once a week
 - [ ] They are manually triggered by the user (by default)
 
@@ -166,7 +166,7 @@ Which LocationMode option from the `Microsoft.Azure.Storage.RetryPolicies.Locati
 
 - [ ] LocationMode.PrimaryOnly
 - [ ] LocationMode.SecondaryOnly
-- [x] LocationMode.PrimaryThenSecondary
+- [ ] LocationMode.PrimaryThenSecondary
 - [ ] LocationMode.SecondaryThenPrimary
 
 Answer: `LocationMode.PrimaryThenSecondary` allows requests to first try the primary location and then retry at the secondary location if necessary.  
@@ -212,7 +212,7 @@ Question: GreenTech Energy Solutions specializes in providing real-time energy c
 
 - [ ] `Copy-AzStorageBlob`
 - [ ] `az storage blob copy start-batch`
-- [x] `azcopy sync --recursive`
+- [ ] `azcopy sync --recursive`
 - [ ] `azcopy copy --recursive`
 
 Answer: `azcopy sync --recursive` is the correct choice because it not only copies the blobs but also ensures that both blob containers are in sync. The `--recursive` flag ensures that all subdirectories and their files are also synced.  
@@ -222,7 +222,7 @@ Answer: `azcopy sync --recursive` is the correct choice because it not only copi
 
 Question: Which of the following methods is the most optimal way to copy a blob from one container to another in Azure Blob Storage?
 
-- [x] `await targetBlob.StartCopyFromUriAsync(sourceBlob.Uri);`
+- [ ] `await targetBlob.StartCopyFromUriAsync(sourceBlob.Uri);`
 - [ ] `await sourceBlob.StartCopyFromUriAsync(targetBlob.Uri);`
 - [ ] `await sourceBlob.DownloadToAsync(localStream); await targetBlob.UploadAsync(localStream);`
 - [ ] `await targetBlob.DownloadToAsync(localStream); await sourceBlob.UploadAsync(localStream);`
@@ -235,9 +235,9 @@ Answer: `await targetBlob.StartCopyFromUriAsync(sourceBlob.Uri);`
 Question: A healthcare organization is considering Azure Blob Storage for storing patient records that are rarely accessed but need to be retained for compliance reasons. They are particularly interested in minimizing storage costs. If they need to access a file stored in Azure Blob Archive storage, which of the following are a valid first step they can take?
 
 - [ ] Reconfigure the storage account
-- [x] Change the tier of the blob
+- [ ] Change the tier of the blob
 - [ ] Rotate the storage account keys
-- [x] Copy the blob to another tier
+- [ ] Copy the blob to another tier
 - [ ] Change the access permissions
 - [ ] Change the account kind
 
@@ -254,7 +254,7 @@ Options:
 
 - [ ] Predictive Results – Archive access tier, Sensor Data – Cool access tier
 - [ ] Predictive Results – Hot access tier, Sensor Data – Archive access tier
-- [x] Predictive Results – Cool access tier, Sensor Data – Archive access tier
+- [ ] Predictive Results – Cool access tier, Sensor Data – Archive access tier
 - [ ] Predictive Results – Hot access tier, Sensor Data – Cool access tier
 
 Answer: "Optimal" means "cost effective". Both Hot and Cool are instantly available, but Cool is most optimal for Predictive Results. Anything needing less than an hour could be put in Cool. Use Hot only if you don't want to keep things (frequent deletion).
@@ -266,7 +266,7 @@ Question: A video streaming company stores large media files, typically 8-9 GB i
 - [ ] Hot access tier
 - [ ] Cool access tier
 - [ ] Cold access tier
-- [x] Archive access tier
+- [ ] Archive access tier
 
 Answer: Files up to 10 GB can be rehydrated within an hour on High Priority, but it's not guaranteed.
 
@@ -274,11 +274,11 @@ Answer: Files up to 10 GB can be rehydrated within an hour on High Priority, but
 
 Question: Which of the following methods can be used to move blobs from one container to another?
 
-- [x] Powershell
-- [x] AzCopy
-- [x] AZ CLI
-- [x] .Net SDK
-- [x] Azure Portal
+- [ ] Powershell
+- [ ] AzCopy
+- [ ] AZ CLI
+- [ ] .Net SDK
+- [ ] Azure Portal
 
 Answer: You can use any of these
 
@@ -287,7 +287,7 @@ Answer: You can use any of these
 Question: You need to retrieve and update the metadata of blobs in an Azure storage account using a .Net library. Which functions would you use:
 
 - [ ] `GetMetadataAsync` and `SetMetadataAsync`
-- [x] `GetPropertiesAsync` and `SetMetadataAsync`
+- [ ] `GetPropertiesAsync` and `SetMetadataAsync`
 - [ ] `GetMetadataAsync` and `SetPropertiesAsync`
 
 Answer: Beautiful! [BlobClient](https://learn.microsoft.com/en-us/dotnet/api/azure.storage.blobs.blobclient?view=azure-dotnet) doesn't support `GetMetadataAsync`, but it has `SetMetadataAsync`.
@@ -296,7 +296,7 @@ Answer: Beautiful! [BlobClient](https://learn.microsoft.com/en-us/dotnet/api/azu
 
 Question: An intern inadvertently misconfigures an application, bypassing the necessary safety checks, which leads to the deletion of a crucial file. Soft delete is enabled on the Azure storage account where this file is stored. Before the incident, two snapshots — Snapshot A and Snapshot B — had been created for the file. Snapshot A was deleted for optimization before the mishap occurred. As a result of the intern's error, the crucial blob and all its remaining snapshots are deleted. Is it possible to restore Snapshot B?
 
-- [x] Yes
+- [ ] Yes
 - [ ] No
 
 Answer: Since soft delete is enabled on the storage account, both the blob and its snapshots, including Snapshot B, are soft-deleted. This means they can be recovered during the retention period specified in the soft delete policy. Therefore, it is possible to restore Snapshot B.
@@ -305,8 +305,8 @@ Answer: Since soft delete is enabled on the storage account, both the blob and i
 
 What authentication supported by AzCopy to copy data from public blob into Azure Blob:
 
-- [x] OAuth
-- [x] SAS
+- [ ] OAuth
+- [ ] SAS
 - [ ] Operation is not permitted
 
 Answer: Azcopy supports both SAS and OAuth authentication for data transfer between two Azure Blobs.
@@ -318,7 +318,7 @@ Question: You're building an ASP.Net Core app to interact with Azure Blob contai
 - [ ] `User.Read`
 - [ ] `User.Write`
 - [ ] `client_id`
-- [x] `user_impersonation`
+- [ ] `user_impersonation`
 - [ ] `Blob.Read`
 - [ ] `Storage.Access`
 - [ ] `AzureAD.Auth`
@@ -332,8 +332,8 @@ Answer: `user_impersonation` allows the application to act as the user, inheriti
 
 Question: Which of the following accounts are eligable for using ZRS?
 
-- [x] General purpose v2 account at Standard performace tier
-- [x] General purpose v2 account at Premium performace tier
+- [ ] General purpose v2 account at Standard performace tier
+- [ ] General purpose v2 account at Premium performace tier
 - [ ] General purpose v1 account at Standard performace tier
 - [ ] General purpose v1 account at Premium performace tier
 - [ ] Blob storage account at Standard performace tier
@@ -345,7 +345,7 @@ Answer: Only General purpose v2 accounts are eligable for using ZRS
 
 Question: Which of the following accounts are eligable for using GRS?
 
-- [x] General purpose v2 account at Standard performace tier
+- [ ] General purpose v2 account at Standard performace tier
 - [ ] General purpose v2 account at Premium performace tier
 - [ ] General purpose v1 account at Standard performace tier
 - [ ] General purpose v1 account at Premium performace tier
