@@ -6,7 +6,7 @@ Question: Which of the following consistency levels offers the greatest throughp
 - [ ] Session
 - [ ] Bounded staleness
 - [ ] Consistent prefix
-- [x] Eventual
+- [ ] Eventual
 
 Answer: The eventual consistency level offers the greatest throughput at the cost of weaker consistency.
 
@@ -14,7 +14,7 @@ Answer: The eventual consistency level offers the greatest throughput at the cos
 
 Question: What are request units (RUs) in Azure Cosmos DB?
 
-- [x] A unit of measurement used to express the cost of all database operations in Azure Cosmos DB.
+- [ ] A unit of measurement used to express the cost of all database operations in Azure Cosmos DB.
 - [ ] A unit of time used to measure the duration of database operations.
 - [ ] A unit of storage used to measure the amount of data stored in Azure Cosmos DB.
 
@@ -24,7 +24,7 @@ Answer: RUs represent the normalized cost of all database operations in Azure Co
 
 Question: When defining a stored procedure in the Azure portal input parameters are always sent as what type to the stored procedure?
 
-- [x] String
+- [ ] String
 - [ ] Integer
 - [ ] Boolean
 
@@ -34,7 +34,7 @@ Answer: When defining a stored procedure in Azure portal, input parameters are a
 
 Question: Which of the following would one use to validate properties of an item being created?
 
-- [x] Pretrigger
+- [ ] Pretrigger
 - [ ] Post-trigger
 - [ ] User-defined function
 
@@ -48,7 +48,7 @@ Question: What is the purpose of the context object in a stored procedure in Azu
 
 - [ ] It provides access to the database schema and metadata.
 - [ ] It allows for the creation of new collections within the database.
-- [x] It provides access to all operations that can be performed in Azure Cosmos DB, and access to the request and response objects.
+- [ ] It provides access to all operations that can be performed in Azure Cosmos DB, and access to the request and response objects.
 
 Answer: The context object in a stored procedure provides access to all operations that can be performed in Azure Cosmos DB, and access to the request and response objects.
 
@@ -57,7 +57,7 @@ Answer: The context object in a stored procedure provides access to all operatio
 Question: What is the role of pretriggers in Azure Cosmos DB?
 
 - [ ] Pretriggers are automatically executed for each database operation.
-- [x] Pretriggers are executed before modifying a database item and must be specified for each database operation where you want them to execute.
+- [ ] Pretriggers are executed before modifying a database item and must be specified for each database operation where you want them to execute.
 - [ ] Pretriggers are used to execute operations after modifying a database item.
 
 Answer: Pretriggers in Azure Cosmos DB are executed before modifying a database item and they need to be specified for each database operation where they should execute.
@@ -68,7 +68,7 @@ Question: What is the purpose of the lease container in the Azure Cosmos DB chan
 
 - [ ] It stores the data from which the change feed is generated.
 - [ ] It processes the change feed across multiple workers.
-- [x] It acts as a state storage and coordinates processing the change feed across multiple workers.
+- [ ] It acts as a state storage and coordinates processing the change feed across multiple workers.
 
 Answer: The lease container acts as a state storage and coordinates processing the change feed across multiple workers.
 
@@ -78,7 +78,7 @@ Question: Your company is developing a new online multiplayer game. The game inc
 
 - [ ] Strong
 - [ ] Session
-- [x] Bounded staleness
+- [ ] Bounded staleness
 - [ ] Consistent prefix
 - [ ] Eventual
 
@@ -90,7 +90,7 @@ Question: What is the most suitable consistency level for a database solution th
 
 - [ ] Strong
 - [ ] Session
-- [x] Bounded staleness
+- [ ] Bounded staleness
 - [ ] Consistent prefix
 - [ ] Eventual
 
@@ -101,7 +101,7 @@ All other options (except Eventual) also enabless gapless reads, but cannot conf
 
 Question: Your company operates a financial application which handles sensitive transactions. It's critical that all operations are immediately consistent across all regions, even if it might impact performance. What consistency level would be most suitable for this scenario?
 
-- [x] Strong
+- [ ] Strong
 - [ ] Session
 - [ ] Bounded staleness
 - [ ] Consistent prefix
@@ -114,7 +114,7 @@ Answer: Strong consistency level ensures immediate consistency across all region
 Question: Your company is creating a shopping platform where users interact with their own shopping carts. A user's actions should be immediately consistent within their session, but it doesn't have to be strongly consistent with other users' sessions. What consistency level would be most suitable for this scenario?
 
 - [ ] Strong
-- [x] Session
+- [ ] Session
 - [ ] Bounded staleness
 - [ ] Consistent prefix
 - [ ] Eventual
@@ -128,7 +128,7 @@ Question: Your company is building a workflow management system where sequences 
 - [ ] Strong
 - [ ] Session
 - [ ] Bounded staleness
-- [x] Consistent prefix
+- [ ] Consistent prefix
 - [ ] Eventual
 
 Answer: Consistent prefix level ensures that the sequence of operations is preserved.
@@ -141,7 +141,7 @@ Question: Your company is creating a social media platform with a feature to 'li
 - [ ] Session
 - [ ] Bounded staleness
 - [ ] Consistent prefix
-- [x] Eventual
+- [ ] Eventual
 
 Answer: Eventual consistency level prioritizes availability and throughput over immediate consistency.
 
@@ -151,7 +151,7 @@ Question: Your company has recently started using Azure Cosmos DB and hasn't mad
 
 - [ ] No delay, data is immediately consistent across all regions.
 - [ ] Delay is limited to a specific number of operations or time interval.
-- [x] Delay may occur but is contained within a single user's session.
+- [ ] Delay may occur but is contained within a single user's session.
 - [ ] Delay is possible and data might be read in the order of writes but a bit behind the latest.
 - [ ] Delay and out-of-order reads may occur, but the system will eventually become consistent.
 
@@ -162,7 +162,7 @@ Answer: Default consistency level is **Session**
 Question: What is the primary reason for identifying access patterns in your solution when using Azure Cosmos DB?
 
 - [ ] To determine the cost of the solution
-- [x] To ensure efficient data modeling
+- [ ] To ensure efficient data modeling
 - [ ] To choose the right programming language
 - [ ] To decide the number of users for the platform
 
@@ -176,7 +176,7 @@ The number of platform users is a business decision, not directly related to dat
 Question: What is the purpose of denormalization in the context of Azure Cosmos DB data modeling?
 
 - [ ] To reduce the number of containers
-- [x] To optimize read queries
+- [ ] To optimize read queries
 - [ ] To increase the number of request units consumed
 - [ ] To add more users to the platform
 
@@ -189,7 +189,7 @@ Question: In Azure Cosmos DB, when dealing with a schema design that requires op
 
 - [ ] Normalizing
 - [ ] Sharding
-- [x] Denormalizing
+- [ ] Denormalizing
 - [ ] Partitioning
 
 Answer: Denormalizing is the process of restructuring a database to reduce redundancy and improve read performance. In Azure Cosmos DB, denormalizing can help in optimizing read operations by reducing the need for complex joins and aggregations. This approach can lead to faster query execution, especially in a distributed database system like Cosmos DB.
@@ -198,7 +198,7 @@ Answer: Denormalizing is the process of restructuring a database to reduce redun
 
 Question: When would you use the manual failover feature in Azure Cosmos DB?
 
-- [x] When you want to test your application's resilience
+- [ ] When you want to test your application's resilience
 - [ ] When you want to add a new region to your account
 - [ ] When you want to enable multi-region writes
 - [ ] When you want to create a new Azure Cosmos DB account
@@ -208,7 +208,7 @@ Answer: Manual failover allows you to manually trigger a failover to a backup re
 Question: What is the prerequisite for enabling service-managed failover in Azure Cosmos DB?
 
 - [ ] Your account must have at least one region
-- [x] Your account must have two or more regions
+- [ ] Your account must have two or more regions
 - [ ] Your account must have multi-region writes enabled
 - [ ] Your account must be configured for manual failover
 
@@ -218,7 +218,7 @@ Answer: The service-managed failover feature requires your account to have two o
 
 Question: What is the role of a partition key in Azure Cosmos DB?
 
-- [x] It helps to distribute data efficiently across partitions.
+- [ ] It helps to distribute data efficiently across partitions.
 - [ ] It is used to manage the Azure Cosmos DB account.
 - [ ] It is used to create a unique DNS name for the account.
 - [ ] It is used to group containers into a database.
@@ -230,7 +230,7 @@ Answer: The partition key helps Azure Cosmos DB distribute the data efficiently 
 Question: What is the main characteristic of Azure Cosmos DB containers regarding data schemas?
 
 - [ ] Containers require a strict schema for all items.
-- [x] Containers are schema-agnostic.
+- [ ] Containers are schema-agnostic.
 - [ ] Containers only support JSON schema.
 - [ ] Containers do not support any schema.
 
@@ -241,7 +241,7 @@ Answer: Containers in Azure Cosmos DB are schema-agnostic, meaning items within 
 Question: What is the maximum amount of data a logical partition in Azure Cosmos DB can store?
 
 - [ ] 10 GB
-- [x] 20 GB
+- [ ] 20 GB
 - [ ] 50 GB
 - [ ] Unlimited
 
@@ -253,7 +253,7 @@ Question: What is the relationship between Azure Cosmos DB and Azure Resource Gr
 
 - [ ] Azure Cosmos DB is a type of Azure Resource Group.
 - [ ] Azure Resource Group is a type of Azure Cosmos DB.
-- [x] Azure Cosmos DB account is created in an Azure Resource Group.
+- [ ] Azure Cosmos DB account is created in an Azure Resource Group.
 - [ ] Azure Resource Group is created in an Azure Cosmos DB account.
 
 Answer: To begin using Azure Cosmos DB, you need to create an Azure Cosmos DB account in an Azure Resource Group in your subscription.
@@ -264,7 +264,7 @@ Question: What is the maximum throughput amount a physical partition in Azure Co
 
 - [ ] 1,000 RU/s
 - [ ] 5,000 RU/s
-- [x] 10,000 RU/s
+- [ ] 10,000 RU/s
 - [ ] 20,000 RU/s
 
 Answer: 10,000 RU/s
@@ -278,7 +278,7 @@ You want to ensure that the application can handle the expected load and that th
 How would you design the data model in Azure Cosmos DB to meet these requirements?
 
 - [ ] Create separate databases for customers and orders, and use the `customer ID` as the partition key for the orders database.
-- [x] Create a single container for both customers and orders, and use the `customer ID` as the partition key.
+- [ ] Create a single container for both customers and orders, and use the `customer ID` as the partition key.
 - [ ] Create separate containers for customers and orders, and use the `customer ID` as the partition key for the orders container.
 - [ ] Create separate containers for customers and orders, with the `customer ID` as the partition key for the customers container and the `order ID` as the partition key for the orders container.
 
@@ -290,7 +290,7 @@ The other options are incorrect because they do not efficiently distribute the d
 Question: What is the main characteristic of shared throughput in Azure Cosmos DB?
 
 - [ ] It is exclusively reserved for a single container.
-- [x] It is specified at the database level and shared with up to 25 containers.
+- [ ] It is specified at the database level and shared with up to 25 containers.
 - [ ] It automatically adjusts based on the current workload.
 - [ ] It is a fixed amount of throughput.
 
@@ -301,7 +301,7 @@ Answer: Shared throughput in Azure Cosmos DB is specified at the database level 
 Question: Can you switch between dedicated and shared throughput in Azure Cosmos DB?
 
 - [ ] Yes, you can switch at any time.
-- [x] No, you cannot switch once a container is created.
+- [ ] No, you cannot switch once a container is created.
 - [ ] Yes, but only within the first 24 hours of creating a container.
 - [ ] No, but you can increase the amount of dedicated throughput for a container.
 
@@ -312,7 +312,7 @@ Answer: You cannot switch between dedicated and shared throughput once a contain
 Question: What is the main advantage of using autoscale throughput in Azure Cosmos DB?
 
 - [ ] It provides a fixed amount of throughput regardless of workload.
-- [x] It automatically adjusts the amount of throughput based on the current workload.
+- [ ] It automatically adjusts the amount of throughput based on the current workload.
 - [ ] It allows throughput to be shared among multiple containers.
 - [ ] It requires manual adjustment of throughput based on workload.
 
@@ -323,7 +323,7 @@ Answer: Autoscale automatically adjusts the amount of throughput based on the cu
 Question: You are designing an application that will use Azure Cosmos DB as its data store. The application will have a high volume of read and write operations. You want to ensure that each container in your database can handle the expected load independently. How should you configure the throughput?
 
 - [ ] Use shared throughput and create a separate database for each container.
-- [x] Use dedicated throughput and assign it to each container individually.
+- [ ] Use dedicated throughput and assign it to each container individually.
 - [ ] Use shared throughput and assign it to each container individually.
 - [ ] Use dedicated throughput and assign it at the database level.
 
@@ -336,7 +336,7 @@ Dedicated throughput is not assigned at the database level but at the container 
 Question: You are designing an application that will use Azure Cosmos DB as its data store. The application will have several containers, each storing different types of data, but none of the containers are expected to have a high volume of read and write operations. You want to optimize costs while ensuring that all containers have enough throughput. Which of the following strategies would be the most cost-effective?
 
 - [ ] Assign dedicated throughput to each container individually, ensuring each has enough to handle its expected load.
-- [x] Assign shared throughput at the database level, allowing all containers to draw from a common pool of throughput.
+- [ ] Assign shared throughput at the database level, allowing all containers to draw from a common pool of throughput.
 - [ ] Assign dedicated throughput at the database level, ensuring the entire database has enough to handle its expected load.
 - [ ] Assign shared throughput to each container individually, allowing each to draw from its own pool of throughput.
 
@@ -348,11 +348,11 @@ Shared throughput is not assigned at the container level but at the database lev
 
 Question: What is the correct syntax to select all properties from items in a Cosmos DB container?
 
-- [x] `SELECT *`
-- [x] `SELECT c.*`
+- [ ] `SELECT *`
+- [ ] `SELECT c.*`
 - [ ] `SELECT ALL`
 - [ ] `SELECT c.ALL`
-- [x] `SELECT c FROM root AS c`
+- [ ] `SELECT c FROM root AS c`
 
 Answer: Same as SQL. Note: The `SELECT *` syntax is only valid if FROM clause has declared exactly one alias.
 
@@ -366,7 +366,7 @@ JOIN p IN c.phones
 ```
 
 - [ ] `SELECT *`
-- [x] `SELECT c.*`
+- [ ] `SELECT c.*`
 - [ ] `SELECT p.*`
 - [ ] `SELECT c.*, p.*`
 
@@ -481,7 +481,7 @@ Question: Which of the following best describes the format of data returned by a
 
 - [ ] XML, since XML is a widely used format for data interchange.
 - [ ] Tabular data, since the PostgreSQL API transforms the data to resemble traditional SQL results.
-- [x] JSON, because Cosmos DB internally stores data in a JSON-like format, regardless of the API used.
+- [ ] JSON, because Cosmos DB internally stores data in a JSON-like format, regardless of the API used.
 - [ ] Binary data, encoded in a PostgreSQL-specific format.
 
 Answer: Cosmos DB internally stores data in a JSON-like format, regardless of the API used.
@@ -499,7 +499,7 @@ WHERE i.id =1
 What kind of outcome can you anticipate from this query?
 
 - [ ] Data in an XML format
-- [x] Data in a JSON format
+- [ ] Data in a JSON format
 - [ ] An error due to incorrect syntax
 - [ ] A table structured in rows and columns
 
@@ -509,27 +509,27 @@ Answer: Cosmos DB internally stores data in a JSON-like format, regardless of th
 
 Question: Given the following statements about Azure Cosmos DB's Change Feed, identify which ones are true:
 
-- [x] Change Feed in Azure Cosmos DB is automatically enabled upon creation of a container.
-- [x] The Change Feed presents changes to a container in a chronological sequence.
+- [ ] Change Feed in Azure Cosmos DB is automatically enabled upon creation of a container.
+- [ ] The Change Feed presents changes to a container in a chronological sequence.
 - [ ] Change Feed natively displays all modifications, including inserts, updates, and deletions.
 - [ ] There is only one interaction model with Change Feed, which is the push model.
-- [x] A soft-delete pattern is supported in Azure Cosmos DB where a "deleted" attribute can be appended to items intended for deletion.
-- [x] In the push model, the Change Feed processor independently dispatches tasks to a client.
+- [ ] A soft-delete pattern is supported in Azure Cosmos DB where a "deleted" attribute can be appended to items intended for deletion.
+- [ ] In the push model, the Change Feed processor independently dispatches tasks to a client.
 - [ ] Change Feed functionality is available across all API models in Azure Cosmos DB.
-- [x] The pull model in Change Feed allows for manual checkpointing and control over processing speed.
-- [x] Items can have a time-to-live (TTL) value attached for automatic deletion.
+- [ ] The pull model in Change Feed allows for manual checkpointing and control over processing speed.
+- [ ] Items can have a time-to-live (TTL) value attached for automatic deletion.
 - [ ] Change Feed functionality is limited to the SQL (Core) API in Azure Cosmos DB.
 - [ ] In the push model, the Change Feed processor requires manual intervention to dispatch tasks to a client.
-- [x] Change Feed shows all inserts and updates, excluding deletions.
-- [x] The Change Feed feature isn't compatible with Azure Cosmos DB's Table and PostgreSQL APIs.
+- [ ] Change Feed shows all inserts and updates, excluding deletions.
+- [ ] The Change Feed feature isn't compatible with Azure Cosmos DB's Table and PostgreSQL APIs.
 - [ ] Change Feed doesn't have a provision for distributing processing tasks across multiple instances.
 - [ ] The Change Feed feature is an add-on and comes with an additional cost.
-- [x] Change Feed allows microservices to independently react to data changes.
-- [x] Change Feed supports reading changes from a specific partition key.
+- [ ] Change Feed allows microservices to independently react to data changes.
+- [ ] Change Feed supports reading changes from a specific partition key.
 - [ ] The Change Feed retains the changes indefinitely until they are consumed.
-- [x] Change Feed can be used to implement event sourcing patterns where the stream of events in Change Feed forms the source of truth and can be used to materialize the application’s state.
+- [ ] Change Feed can be used to implement event sourcing patterns where the stream of events in Change Feed forms the source of truth and can be used to materialize the application’s state.
 - [ ] Change Feed cannot be used in scenarios that require triggering a function or a logic app, real-time processing, or distributed database updates.
-- [x] With Change Feed, you can create low-latency, real-time data processing solutions.
+- [ ] With Change Feed, you can create low-latency, real-time data processing solutions.
 - [ ] Change feed guarantees order across the partition key values.
 
 Answer:
@@ -544,7 +544,7 @@ Question: Your organization has deployed a multi-region Azure Cosmos DB database
 
 - [ ] The update from the region that first modified the document is always retained.
 - [ ] The update from a randomly selected region is retained.
-- [x] The update from the region that last modified the document is retained.
+- [ ] The update from the region that last modified the document is retained.
 - [ ] All updates from all regions are retained in some manner.
 
 Answer: Last Writer Wins
@@ -556,7 +556,7 @@ Question: You're running a global highly available e-commerce application with A
 - [ ] Increase Request Units (RUs)
 - [ ] Implement strong consistency level
 - [ ] Disable multi-region writes
-- [x] Set up a conflict resolution policy
+- [ ] Set up a conflict resolution policy
 
 Answer: Setting up a conflict resolution policy helps manage conflicts that arise from concurrent writes across different regions, ensuring data consistency across regions.  
 The other options are related to performance, consistency levels, and write capabilities, but they don't directly address data conflicts arising from concurrent writes.  
@@ -566,7 +566,7 @@ Disabling multi-region writes could potentially avoid conflicts, but it would al
 
 Question: An e-commerce company is implementing a data migration operation on their Azure Cosmos DB database. The operation needs to be precisely controlled, allowing the engineering team to manually request the server for a set of changes, process them, and then request the next set. Which Change Feed interaction model best fits this use case?
 
-- [x] Pull Model
+- [ ] Pull Model
 - [ ] Push Model
 - [ ] Either Model
 - [ ] None of the Models
@@ -578,7 +578,7 @@ Answer: The pull model offers extra control for specific use-cases, especially f
 Question: A financial technology company is developing a real-time fraud detection system using Azure Cosmos DB. The system needs to react instantaneously to changes in the database, with minimal latency. Which Change Feed interaction model best fits this use case?
 
 - [ ] Pull Model
-- [x] Push Model
+- [ ] Push Model
 - [ ] Either Model
 - [ ] None of the Models
 
@@ -588,11 +588,11 @@ Answer: In the push model, the change feed processor automatically sends work to
 
 Question: Which of the following statements about Time to Live (TTL) in Azure Cosmos DB are true? Select all that apply.
 
-- [x] TTL can be set at the container level and can be overridden on a per-item basis.
+- [ ] TTL can be set at the container level and can be overridden on a per-item basis.
 - [ ] TTL can be set only at item level.
 - [ ] When TTL has expired, if the container is overloaded with requests, data is immediately deleted.
-- [x] Items with TTL set to "-1" don't expire by default.
-- [x] If TTL is not set on a container, then the TTL on an item in this container has no effect.
+- [ ] Items with TTL set to "-1" don't expire by default.
+- [ ] If TTL is not set on a container, then the TTL on an item in this container has no effect.
 - [ ] If a container's TTL is null or missing, items without a specific TTL will not expire, while others adhere to their own TTL.
 - [ ] TTL is used for automatically deleting items after a certain period, based on their creation time.
 
@@ -649,9 +649,9 @@ Container container = await database.CreateContainerAsync(
 
 Question: You are developing an application that requires the efficient and rapid addition of a large number of items using Azure Cosmos DB. Which of the following practices can be employed to optimize performance for this use case?
 
-- [x] Set the `EnableContentResponseOnWrite` request option to false.
+- [ ] Set the `EnableContentResponseOnWrite` request option to false.
 - [ ] Use `FeedIterator` for iterating multiple pages of query results.
-- [x] Exclude unused paths from indexing.
+- [ ] Exclude unused paths from indexing.
 - [ ] Use `PartitionKey` for point read.
 
 Answer: Setting `EnableContentResponseOnWrite` to false for workloads with heavy create/write payloads and excluding unused paths from indexing can improve performance by eliminating the return of created or updated resources to the SDK and facilitating faster writes, respectively, benefiting write-heavy workloads.
@@ -663,9 +663,9 @@ Using `PartitionKey` for point read can reduce the Request Unit (RU) charge and 
 
 Question: You are developing an application with a read-heavy workload using Azure Cosmos DB. Which of the following practices could help improve performance?
 
-- [x] Use `PartitionKey` for point read.
+- [ ] Use `PartitionKey` for point read.
 - [ ] Set the `EnableContentResponseOnWrite` request option to false.
-- [x] Use `FeedIterator` for iteratin multiple pages of query results.
+- [ ] Use `FeedIterator` for iteratin multiple pages of query results.
 - [ ] Increase the size of your documents.
 
 Answer: Utilizing `PartitionKey` for point read can reduce Request Unit (RU) charges and enhance performance, particularly for read-heavy workloads, while employing `FeedIterator` can improve performance when handling multiple pages of query results, a common scenario in read-heavy workloads.
@@ -678,9 +678,9 @@ Increasing the size of your documents can actually increase the Request Unit (RU
 Question: Your application is experiencing latency issues when connecting to Azure Cosmos DB. Which of the following could be a potential cause and how would you address it?
 
 - [ ] The application is not using the latest version of the Azure Cosmos DB SDK.
-- [x] The application is running in a different Azure region than your Azure Cosmos DB account.
+- [ ] The application is running in a different Azure region than your Azure Cosmos DB account.
 - [ ] The application is using a single instance of CosmosClient for the lifetime of the application.
-- [x] The application is using Gateway mode for connectivity.
+- [ ] The application is using Gateway mode for connectivity.
 
 Answer: Running your application in the same Azure region as your Azure Cosmos DB account and using Direct mode for connectivity can significantly reduce latency, optimizing the performance of your application.
 
@@ -691,12 +691,12 @@ Using a single instance of CosmosClient for the lifetime of your application is 
 
 Question: You are developing an application that needs to upload a large number of items into Azure Cosmos DB as quickly as possible. Which of the following practices could help improve performance?
 
-- [x] Enable Bulk support.
-- [x] Use ThroughputProperties to manage throughput.
-- [x] Use Direct mode for connectivity.
+- [ ] Enable Bulk support.
+- [ ] Use ThroughputProperties to manage throughput.
+- [ ] Use Direct mode for connectivity.
 - [ ] Use Windows 64-bit host processing.
 - [ ] Use single instance of CosmosClient.
-- [x] Set the EnableContentResponseOnWrite request option to false.
+- [ ] Set the EnableContentResponseOnWrite request option to false.
 
 Answer: Enabling Bulk support, utilizing `ThroughputProperties` for managing throughput, setting connectivity mode to `Direct`, and setting `EnableContentResponseOnWrite` to false can collectively enhance performance when efficiently handling large volumes of data in Azure Cosmos DB by optimizing high-volume write operations, balancing resource usage, and minimizing network and serialization costs.  
 Using Windows 64-bit host processing and a single instance of CosmoCLient can generally improve performance, but it doesn't specifically target scenarios where large volumes of data are being dumped into the database.
@@ -775,7 +775,7 @@ FeedIterator<SalesOrder> resultSet = container.GetItemQueryIterator<SalesOrder>(
 Question: Which of the following tools can you use to create and execute triggers, stored procedures, and UDFs in Azure Cosmos DB?
 
 - [ ] Visual Studio Code
-- [x] Azure Portal
+- [ ] Azure Portal
 - [ ] SQL Server Management Studio
 - [ ] Azure DevOps
 
@@ -789,7 +789,7 @@ Question: Your organization is planning to migrate a NoSQL database to Azure Cos
 - [ ] Table API
 - [ ] Gremlin API
 - [ ] Cassandra API
-- [x] MongoDB API
+- [ ] MongoDB API
 
 Answer: In the context of Azure Cosmos DB, the BSON (Binary JSON) format is specifically associated with the MongoDB API.
 
@@ -800,7 +800,7 @@ Question: In Azure Cosmos DB, when working with stored procedures, triggers, or 
 - [ ] Console.WriteLine()
 - [ ] Trace.Debug()
 - [ ] System.out.println()
-- [x] console.log()
+- [ ] console.log()
 
 Answer: stored procedures, triggers, and user-defined functions are written on JavaScript.
 
@@ -809,7 +809,7 @@ Answer: stored procedures, triggers, and user-defined functions are written on J
 Question: What language should you use if you want to create a new user-defined function, stored procedure, or trigger?
 
 - [ ] JSON
-- [x] JavaScript
+- [ ] JavaScript
 - [ ] C#
 - [ ] XML
 - [ ] YAML
@@ -822,7 +822,7 @@ Question: How many free tier Azure Cosmos DB accounts can you have per Azure sub
 
 - [ ] Two
 - [ ] Unlimited
-- [x] One
+- [ ] One
 - [ ] None
 
 Answer: You can have up to one free tier Azure Cosmos DB account per Azure subscription.
@@ -831,10 +831,10 @@ Answer: You can have up to one free tier Azure Cosmos DB account per Azure subsc
 
 Question: What operations can a stored procedure perform of document in Cosmos DB?
 
-- [x] Create
-- [x] Read
-- [x] Update
-- [x] Delete
+- [ ] Create
+- [ ] Read
+- [ ] Update
+- [ ] Delete
 - [ ] No operations allowed
 
 Answer: Stored procedures are capable of performing CRUD and query operations on any document in a collection.
@@ -886,9 +886,9 @@ function validateToDoItemTimestamp() {
 
 Question: You are working on a project that involves storing large amounts of data in Azure Cosmos DB using the SQL API. The data consists of user profiles, each with a variety of attributes. During the design phase, you realize that no single attribute is suitable for partitioning, as they either appear too frequently or not frequently enough to distribute the workload evenly across partitions. Which of the following strategies could you use to create a synthetic partition key that ensures even distribution of workloads?
 
-- [x] Concatenating multiple common properties, followed by a random number
+- [ ] Concatenating multiple common properties, followed by a random number
 - [ ] Using the user's email address as it is unique
-- [x] Appending a timestamp to the user's country of residence
+- [ ] Appending a timestamp to the user's country of residence
 - [ ] Using the user's age as the partition key
 - [ ] Using the user's membership status (e.g., Free, Premium, VIP)
 
@@ -905,7 +905,7 @@ Answer:
 Question: How to retain the change feed in Azure Cosmos DB until the data is deleted? What should be the value of TTL (Time to Live) property?
 
 - [ ] null
-- [x] -1
+- [ ] -1
 - [ ] 0
 - [ ] 1
 
@@ -960,7 +960,7 @@ var createDocumentStoredProc = {
 Question: How to set Time-To-Live property of `ContainerProperties` to be 1 hour?
 
 - [ ] `DefaultTimeToLive = 60`
-- [x] `DefaultTimeToLive = 3600`
+- [ ] `DefaultTimeToLive = 3600`
 - [ ] `TTL = 60`
 - [ ] `TTL = 3600`
 
@@ -1016,7 +1016,7 @@ Question: You are working on an Azure-based application that utilizes Azure Cosm
 - [ ] Executing queries that don't use the partition key
 - [ ] Running queries focused on a single partition key
 - [ ] Failing to set an indexing policy
-- [x] Designing a partition key that leads to uneven request distribution
+- [ ] Designing a partition key that leads to uneven request distribution
 
 Answer: Hot partitioning typically arises when there is an uneven distribution of requests or data across logical partitions. This imbalance prevents Azure Cosmos DB from scaling effectively. The ideal partition key should ensure a balanced distribution of both storage and throughput across partitions.
 
