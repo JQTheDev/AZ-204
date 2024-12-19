@@ -2,7 +2,7 @@
 
 Question: You are tasked with providing secure remote access to an on-premises application for your organization's employees. Which action should you perform?
 
-- [x] Activate application proxy in Microsoft Entra ID.
+- [ ] Activate application proxy in Microsoft Entra ID.
 - [ ] Upgrade the staff accounts to Microsoft Entra ID Premium P1.
 - [ ] Establish a new conditional access policy in Microsoft Entra ID.
 - [ ] Set up the portal to utilize Microsoft Entra ID business-to-consumer (B2C).
@@ -16,7 +16,7 @@ Question: Your organization is planning to collaborate with a partner company on
 - [ ] Activate application proxy in Microsoft Entra ID.
 - [ ] Upgrade the staff accounts to Microsoft Entra ID Premium P1.
 - [ ] Establish a new conditional access policy in Microsoft Entra ID.
-- [x] Configure the applications to use Microsoft Entra ID business-to-business (B2B).
+- [ ] Configure the applications to use Microsoft Entra ID business-to-business (B2B).
 
 Answer: The correct action is to configure the applications to use Microsoft Entra ID business-to-business (B2B). Microsoft Entra ID B2B allows you to share your company's applications with external users in a secure manner.
 
@@ -27,7 +27,7 @@ Question: As an administrator for a startup utilizing Microsoft Entra ID for ide
 - [ ] Implement Microsoft Entra ID business-to-consumer (B2C).
 - [ ] Upgrade to Microsoft Entra ID Premium P1 for all user accounts.
 - [ ] Establish a new conditional access policy in Microsoft Entra ID.
-- [x] Activate security defaults in Microsoft Entra ID.
+- [ ] Activate security defaults in Microsoft Entra ID.
 - [ ] Set up an application proxy in Microsoft Entra ID.
 
 Answer: The most appropriate step is to activate security defaults in Microsoft Entra ID. This feature provides a basic level of security, including mandatory multi-factor authentication for all users, at no additional cost. The other options, while useful in certain scenarios, do not directly address the requirement of enabling mandatory multi-factor authentication for all users.
@@ -38,8 +38,8 @@ Question: Your organization uses Microsoft Entra ID for identity management. You
 
 - [ ] Activate application proxy in Microsoft Entra ID.
 - [ ] Upgrade the staff accounts to Microsoft Entra ID Premium P1.
-- [x] Upgrade the staff accounts to Microsoft Entra ID Premium P2.
-- [x] Establish a new risk-based conditional access policy in Microsoft Entra ID.
+- [ ] Upgrade the staff accounts to Microsoft Entra ID Premium P2.
+- [ ] Establish a new risk-based conditional access policy in Microsoft Entra ID.
 - [ ] Enable security defaults in Microsoft Entra ID.
 - [ ] Configure the applications to use Microsoft Entra ID business-to-business (B2B).
 
@@ -51,7 +51,7 @@ Question: In Microsoft Entra ID, what happens to Conditional Access policies whe
 
 - [ ] The policies are automatically disabled.
 - [ ] The policies are automatically deleted.
-- [x] The policies remain active and can be viewed and deleted, but no longer updated.
+- [ ] The policies remain active and can be viewed and deleted, but no longer updated.
 - [ ] Nothing changes for existing conditional policies.
 - [ ] The policies are automatically replaced with default security policies.
 
@@ -63,7 +63,7 @@ Question: You are developing an application that uses Microsoft Entra ID for aut
 
 - [ ] Enable the `OAuth2AllowImplicitFlow` attribute in the application manifest.
 - [ ] Set the `requiredResourceAccess` attribute in the application manifest to include the group IDs.
-- [x] Configure the `groupMembershipClaims` attribute in the application manifest.
+- [ ] Configure the `groupMembershipClaims` attribute in the application manifest.
 - [ ] Add the group IDs to the `knownClientApplications` attribute in the application manifest.
 
 Answer: `groupMembershipClaims` is used to emit group claims in the token that the application receives when a user authenticates. The other options do not directly influence the emission of group claims in the token.
@@ -74,7 +74,7 @@ Question: You are developing an application that uses Microsoft Entra ID for aut
 
 - [ ] Set `groupMembershipClaims` to `All`
 - [ ] Set `groupMembershipClaims` to `None`
-- [x] Set `groupMembershipClaims` to `SecurityGroup`
+- [ ] Set `groupMembershipClaims` to `SecurityGroup`
 - [ ] Set `groupMembershipClaims` to `DirectoryRole`
 
 Answer: Set `groupMembershipClaims` to `SecurityGroup` will ensure that only Security Group memberships are included in the user's token. The other options either include too many groups ("All"), no groups ("None"), or a different type of group ("DirectoryRole").
@@ -85,7 +85,7 @@ Question: In the context of Microsoft Entra ID, which of the following statement
 
 - [ ] AppRoles and Groups are both specific to an application and are removed when the application is removed.
 - [ ] AppRoles are specific to an Microsoft Entra ID tenant, while Groups are specific to an application.
-- [x] AppRoles are specific to an application and are removed with the app registration, while Groups are tenant-specific and persist even after the app is removed.
+- [ ] AppRoles are specific to an application and are removed with the app registration, while Groups are tenant-specific and persist even after the app is removed.
 - [ ] Groups are removed with the app registration, while AppRoles are tenant-specific and persist even after the app is removed.
 
 Answer: AppRoles are specific to an application and are removed with the app registration, while Groups are tenant-specific and persist even after the app is removed.
@@ -94,7 +94,7 @@ Answer: AppRoles are specific to an application and are removed with the app reg
 
 Question: Which of the types of permissions supported by the Microsoft identity platform is used by apps that have a signed-in user present?
 
-- [x] Delegated permissions
+- [ ] Delegated permissions
 - [ ] App-only access permissions
 - [ ] Both delegated and app-only access permissions
 
@@ -106,7 +106,7 @@ App-only access permissions are used by apps that run without a signed-in user p
 Question: Which of the following app scenarios require code to handle Conditional Access challenges?
 
 - [ ] Apps performing the device-code flow
-- [x] Apps performing the on-behalf-of flow
+- [ ] Apps performing the on-behalf-of flow
 - [ ] Apps performing the Integrated Windows authentication flow
 
 Answer: Apps performing the on-behalf-of flow require code to handle Conditional Access challenges.  
@@ -117,7 +117,7 @@ The Integrated Windows authentication flow allows applications on domain or Micr
 Question: Which of the following MSAL libraries supports single-page web apps?
 
 - [ ] MSAL Node
-- [x] MSAL.js
+- [ ] MSAL.js
 - [ ] MSAL.NET
 
 Answer: MSAL.js supports single-page applications.
@@ -128,7 +128,7 @@ Question: What does the Microsoft Identity platform assume if the resource ident
 
 - [ ] The resource is Microsoft Outlook.
 - [ ] The resource is Microsoft Azure.
-- [x] The resource is Microsoft Graph.
+- [ ] The resource is Microsoft Graph.
 - [ ] The resource is Microsoft Office 365.
 - [ ] The resource is Key Vault.
 
@@ -139,7 +139,7 @@ Answer: if the resource identifier is omitted in the scope parameter, the resour
 Question: In the context of the Microsoft Identity platform, what is the function of the `scope` parameter?
 
 - [ ] It sets the access level of the user.
-- [x] It indicates the type of resource being requested.
+- [ ] It indicates the type of resource being requested.
 - [ ] It determines the user's authentication mechanism.
 - [ ] It manages the duration of the session.
 
@@ -150,7 +150,7 @@ Answer: It indicates the type of resource being requested.
 Question: What happens if a user attempts to access Microsoft Key Vault with `scope=User.Read` in the Microsoft Identity platform?
 
 - [ ] The request is successful and the user can access Key Vault data.
-- [x] The request fails because User.Read will assume wrong resource type.
+- [ ] The request fails because User.Read will assume wrong resource type.
 - [ ] The request fails due to insufficient user permissions.
 - [ ] The request is successful but the user the user can only see key names, not the key values.
 
@@ -160,14 +160,14 @@ Answer: Use `https://vault.azure.net/.default` instead
 
 Question: Which of the following authorization flows are primarily utilized by Public client applications:
 
-- [x] Authorization code
+- [ ] Authorization code
 - [ ] Client credentials
-- [x] On-behalf-of
-- [x] Implicit
-- [x] Device code
-- [x] Integrated Windows
-- [x] Interactive
-- [x] Username/password
+- [ ] On-behalf-of
+- [ ] Implicit
+- [ ] Device code
+- [ ] Integrated Windows
+- [ ] Interactive
+- [ ] Username/password
 
 Answer: User-facing apps without the ability to securely store secrets
 
@@ -176,13 +176,13 @@ Answer: User-facing apps without the ability to securely store secrets
 Question: Which of the following authorization flows are primarily utilized by Confidential client applications:
 
 - [ ] Authorization code
-- [x] Client credentials
-- [x] On-behalf-of
+- [ ] Client credentials
+- [ ] On-behalf-of
 - [ ] Implicit
 - [ ] Device code
-- [x] Integrated Windows
+- [ ] Integrated Windows
 - [ ] Interactive
-- [x] Username/password
+- [ ] Username/password
 
 Answer: Server-based apps that can securely handle secrets
 
@@ -190,7 +190,7 @@ Answer: Server-based apps that can securely handle secrets
 
 Question: You are tasked to build an application that will run on mobile devices and web browsers. This application needs to securely obtain tokens in the name of the user, using an Authorization Code flow. Which application builder should you use?
 
-- [x] `PublicClientApplicationBuilder`
+- [ ] `PublicClientApplicationBuilder`
 - [ ] `ConfidentialClientApplicationBuilder`
 
 Answer: User-facing apps without the ability to securely store secrets
@@ -200,7 +200,7 @@ Answer: User-facing apps without the ability to securely store secrets
 Question: Your company is developing a service application that will run without user interaction. It will make use of the Client Credentials flow to access resources. Which application builder should you use?
 
 - [ ] `PublicClientApplicationBuilder`
-- [x] `ConfidentialClientApplicationBuilder`
+- [ ] `ConfidentialClientApplicationBuilder`
 
 Answer: Server-based apps that can securely handle secrets
 
@@ -210,13 +210,13 @@ Question: Which of the following is NOT a function of the Microsoft Authenticati
 
 - [ ] Manages token cache and automatically refreshes tokens when needed.
 - [ ] Assists in multi-factor authentication process.
-- [x] Provides proactive security threat alerts for user accounts.
+- [ ] Provides proactive security threat alerts for user accounts.
 - [ ] Obtains tokens for users or applications when applicable.
 - [ ] Assists with application setup from configuration files.
 - [ ] Enables Single Sign-On (SSO) across multiple applications.
 - [ ] Supports application to application communication through On-Behalf-Of (OBO) flow.
-- [x] Automatically resolves API versioning conflicts.
-- [x] Provides optimized API depending on the platform (.Net, Node, Android, Python, etc.)
+- [ ] Automatically resolves API versioning conflicts.
+- [ ] Provides optimized API depending on the platform (.Net, Node, Android, Python, etc.)
 
 Answer: MSAL does not provide proactive security threat alerts as this is typically handled by dedicated security tools or systems, and it doesn't automatically resolve API versioning conflicts as this is typically a function of the API management or the individual application logic. The API is unified across platforms.
 
@@ -384,8 +384,8 @@ Question: You are creating an internal portal for staff members to access confid
 - [ ] Activate application proxy in Microsoft Entra ID.
 - [ ] Set up the portal to utilize Microsoft Entra ID business-to-consumer (B2C).
 - [ ] Enable security defaults in Microsoft Entra ID.
-- [x] Upgrade the staff accounts to Microsoft Entra ID Premium P1.
-- [x] Establish a new conditional access policy in Microsoft Entra ID.
+- [ ] Upgrade the staff accounts to Microsoft Entra ID Premium P1.
+- [ ] Establish a new conditional access policy in Microsoft Entra ID.
 
 Answer: Conditional access policies require Microsoft Entra ID Premium P1 licenses.  
 Security defaults enable MFA for **ALL** users, which does not meat requirenments for specific staff members.
@@ -395,7 +395,7 @@ Security defaults enable MFA for **ALL** users, which does not meat requirenment
 Question: Which component is responsible for directing the user to the location defined by the redirect URI or reply URL, following successful authorization of the app and the granting of an authorization code or access token?
 
 - [ ] Client Application
-- [x] Authorization Server
+- [ ] Authorization Server
 - [ ] Resource Server
 - [ ] User's Browser
 
@@ -407,7 +407,7 @@ Question: In Microsoft Entra ID, what is the requirement for applications to del
 
 - [ ] Applications can optionally register with Microsoft Entra ID.
 - [ ] Applications must register with a third-party identity provider.
-- [x] Applications must register with Microsoft Entra ID.
+- [ ] Applications must register with Microsoft Entra ID.
 - [ ] Registration with Microsoft Entra ID is discouraged for client applications.
 
 Answer: In Microsoft Entra ID, all applications must register to delegate identity and access management. This registration process allows the application to be integrated with Microsoft Entra ID, enabling features like authentication, authorization, and more.
@@ -426,11 +426,11 @@ Azure Storage: Set `user_impersonation` to "Delegate" to allow the application t
 
 Question: You are developing a web application using ASP.Net Core. The application needs to authenticate users via Microsoft Entra ID and also access Azure Blob Storage on behalf of the authenticated users. Which of the following permissions should be set to "Delegated" in the Azure Portal to meet these requirements?
 
-- [x] `Microsoft Graph > User.Read`
+- [ ] `Microsoft Graph > User.Read`
 - [ ] `Microsoft Graph > User.ReadWrite`
 - [ ] `Microsoft Graph > user_impersonation`
 - [ ] `Microsoft Graph > Microsoft Greaph Reader`
-- [x] `Azure Storage > user_impersonation`
+- [ ] `Azure Storage > user_impersonation`
 - [ ] `Azure Storage > Storage Blob Data Reader`
 - [ ] `Azure Storage > Files.Read`
 - [ ] `Microsoft Graph > Files.Read`
@@ -447,7 +447,7 @@ Question: You are developing a web application using ASP.Net Core. The applicati
 
 - [ ] None
 - [ ] Application
-- [x] Delegated
+- [ ] Delegated
 - [ ] Admin
 
 Answer: "Delegated" allows the application to authenticate users and read their basic profile on their behalf.
@@ -458,7 +458,7 @@ Question: Your ASP.Net Core web application also needs to access Azure Blob Stor
 
 - [ ] None
 - [ ] Application
-- [x] Delegated
+- [ ] Delegated
 - [ ] Admin
 
 Answer: "Delegated" allows the application to access Azure Blob Storage on behalf of the authenticated users.
@@ -469,7 +469,7 @@ Question: You are a solutions architect for 'StreamBox,' a video streaming servi
 
 - [ ] Microsoft Entra ID B2B
 - [ ] Azure Multi-Factor Authentication
-- [x] Microsoft Entra ID B2C
+- [ ] Microsoft Entra ID B2C
 - [ ] Microsoft Entra ID Single Tenant Authentication
 
 Answer: Emtra ID B2C supports authentication through a variety of social media platforms and email accounts, making it the most suitable choice for this scenario.
@@ -478,13 +478,13 @@ Answer: Emtra ID B2C supports authentication through a variety of social media p
 
 Question: Click on the following steps in the correct order to integrate authentication and authorization working with the Microsoft identity platform for Web API:
 
-- [x] Store token cache
-- [x] Register app
-- [x] Control access to web API (authorization)
-- [x] Configure app with code sample
-- [x] Configure permission & call API of choice
-- [x] Validate access token
-- [x] Configure secrets & certificates
+- [ ] Store token cache
+- [ ] Register app
+- [ ] Control access to web API (authorization)
+- [ ] Configure app with code sample
+- [ ] Configure permission & call API of choice
+- [ ] Validate access token
+- [ ] Configure secrets & certificates
 
 Answer:
 
@@ -500,10 +500,10 @@ Answer:
 
 Question: Click on the following steps in the correct order to protect an API in Azure API Management with Microsoft Entra ID:
 
-- [x] Register the backend API application in Microsoft Entra ID.
-- [x] Register the web App (website containing summarized results) in Microsoft Entra ID so that it can call the backend API.
-- [x] Allow permissions between the website app to call the backend API app. Add the configurations in Microsoft Entra ID.
-- [x] Enable OAuth 2.0 user authorization and add the validate-jwt policy to validate the OAuth token for API calls.
+- [ ] Register the backend API application in Microsoft Entra ID.
+- [ ] Register the web App (website containing summarized results) in Microsoft Entra ID so that it can call the backend API.
+- [ ] Allow permissions between the website app to call the backend API app. Add the configurations in Microsoft Entra ID.
+- [ ] Enable OAuth 2.0 user authorization and add the validate-jwt policy to validate the OAuth token for API calls.
 
 Answer:
 
@@ -518,7 +518,7 @@ Question: You need to implement authentication for two applications: a web appli
 
 - [ ] Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant)
 - [ ] Accounts in any organizational directory (Any Microsoft Entra ID directory - Multitenant) and personal Microsoft accounts
-- [x] Accounts in this organizational directory only (Single tenant)
+- [ ] Accounts in this organizational directory only (Single tenant)
 - [ ] Personal Microsoft accounts only
 
 Answer: This option restricts access to only users in the specific Entra ID tenant, meeting the requirement.  
@@ -559,7 +559,7 @@ Answer:
 
 Question : You created a new user account named AppAdmin. You must assign the role of Application Administrator to the AppAdmin user account. What should you do?
 
-- [x] Assign the `Administrator` role
+- [ ] Assign the `Administrator` role
 - [ ] Add to `Administrators` group
 - [ ] Add "Request Admin" access policy
 
