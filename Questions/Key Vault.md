@@ -4,7 +4,7 @@ Question: Which of the below methods of authenticating to Azure Key Vault is rec
 
 - [ ] Service principal and certificate
 - [ ] Service principal and secret
-- [x] Managed identities
+- [ ] Managed identities
 
 Answer: The benefit of this approach is that Azure automatically rotates the identity.  
 Service principal and secret is not recommended because the application owner or developer must rotate the certificate.  
@@ -15,7 +15,7 @@ Service principal and certificate is not recommended because it is difficult to 
 Question: Azure Key Vault protects data when it's traveling between Azure Key Vault and clients. What protocol does it use for encryption?
 
 - [ ] Secure Sockets Layer
-- [x] Transport Layer Security
+- [ ] Transport Layer Security
 - [ ] Presentation Layer
 
 Answer: Azure Key Vault enforces Transport Layer Security protocol to protect data when it’s traveling between Azure Key Vault and clients.  
@@ -28,7 +28,7 @@ Question: You're designing a cloud-based microservice architecture using Azure F
 
 - [ ] Create an Microsoft Entra ID application, assign it 'get' and 'list' permissions for the Key Vault, and embed the application's client ID and client secret in function's environment variables.
 - [ ] Generate a User-assigned Managed Identity, assign it 'get' and 'list' permissions for the Key Vault, and embed the identity's client ID and client secret in function's environment variables.
-- [x] Enable a System-assigned Managed Identity for the function and assign it 'get' and 'list' permissions for the Key Vault.
+- [ ] Enable a System-assigned Managed Identity for the function and assign it 'get' and 'list' permissions for the Key Vault.
 - [ ] Generate an access token to the Key Vault, and store the Key Vault's URI and the access token in the function's environment variables.
 - [ ] Store the Key Vault's URI in the function's environment variables and use a shared access signature (SAS) token to authenticate.
 - [ ] Create a service principal, assign it 'get' and 'list' permissions for the Key Vault, and store the service principal's credentials in the function's environment variables.
@@ -43,8 +43,8 @@ System-assigned Managed Identities are automatically managed by Azure and provid
 
 Question: You have downloaded an Azure Functions codebase that is set to be triggered by an HTTP request. This function needs to access a database, and for that, it requires a connection string. You need to ensure the connection string is not stored in plain text within the code or configuration files. You are preparing to create the necessary components to achieve your goal. Which of the following should you create to achieve your goal? Answer by selecting the correct options from the list below.
 
-- [x] Azure Key Vault
-- [x] Access Policy
+- [ ] Azure Key Vault
+- [ ] Access Policy
 - [ ] Microsoft Entra ID Identity Protections
 - [ ] Azure Storage Account
 - [ ] Azure Policy
@@ -58,8 +58,8 @@ Azure Policy: Evaluates resource properties against business rules, not for secr
 
 Question: Your organization is migrating sensitive data to Azure and has decided to use Azure Key Vault for secure storage. To enhance data protection, the IT team wants to ensure that if any key vault or its associated objects are unintentionally deleted, they can be recovered. Moreover, they want to ensure that once an item is marked as deleted, it cannot be permanently removed until a specified retention period elapses. Which Azure CLI commands should the IT team execute to implement these protective measures?
 
-- [x] `az keyvault update --name <YourKeyVaultName> --enable-soft-delete true`
-- [x] `az keyvault update --name <YourKeyVaultName> --enable-purge-protection true`
+- [ ] `az keyvault update --name <YourKeyVaultName> --enable-soft-delete true`
+- [ ] `az keyvault update --name <YourKeyVaultName> --enable-purge-protection true`
 - [ ] `az keyvault create --name <YourKeyVaultName> --retention-days 90`
 - [ ] `az keyvault set-policy --name <YourKeyVaultName> --object-id <ObjectId> --key-permissions purge`
 - [ ] `az keyvault backup --name <YourKeyVaultName> --file <BackupFileName>`
@@ -117,9 +117,9 @@ DecryptResult decryptResult = cryptoClient.Decrypt(encryptionAlgorithm, encryptR
 
 Question: You are an Azure administrator responsible for managing a Key Vault named 'SecureVault'. A new application needs to securely store, retrieve, and manage cryptographic keys within 'SecureVault'. The application must be able to encrypt keys before storing them, decrypt keys when retrieving them, and also have the ability to retrieve key information. You need to configure the appropriate permissions for the application's managed identity using the az keyvault set-policy command. Which permissions should you grant to the application's managed identity in the Key Vault's access policy?
 
-- [x] WRAP
-- [x] UNWRAP
-- [x] GET
+- [ ] WRAP
+- [ ] UNWRAP
+- [ ] GET
 - [ ] LIST
 - [ ] UPDATE
 - [ ] RECOVER
@@ -167,7 +167,7 @@ az keyvault set-policy --name <your-key-vault-name> --upn user@domain.com --cert
 
 Question: What format the response of this command is: `az keyvault secret show --name "ExamplePassword" --vault-name $myKeyVault`?
 
-- [x] JSON
+- [ ] JSON
 - [ ] XML
 - [ ] YAML
 - [ ] Plain text
@@ -179,7 +179,7 @@ Answer: JSON.
 Question: You have configured an Azure Key Vault and stored a secret in it. The secret has multiple versions. You need to retrieve a particular version of the secret using a REST API call. What should you include in the REST API call to specify the version you want to retrieve?
 
 - [ ] A session variable
-- [x] A query string parameter
+- [ ] A query string parameter
 - [ ] A JSON payload
 - [ ] A POST parameter
 
