@@ -4,7 +4,7 @@ Question: Which of the following availability tests is recommended for authentic
 
 - [ ] URL ping
 - [ ] Standard
-- [x] Custom TrackAvailability
+- [ ] Custom TrackAvailability
 
 Answer: Custom TrackAvailability test is the long term supported solution for multi request or authentication test scenarios.  
 The URL ping test is used to test endpoint availability.  
@@ -15,7 +15,7 @@ Standard test is similar to the URL ping test, but it includes additional inform
 Question: Which of the following metric collection types provides near real-time querying and alerting on dimensions of metrics, and more responsive dashboards?
 
 - [ ] Log-based
-- [x] Pre-aggregated
+- [ ] Pre-aggregated
 - [ ] Azure Service Bus
 
 Answer: Pre-aggregated metrics are stored as a time series and only with key dimensions, which enable near real-time alerting on dimensions of metrics, more responsive dashboards.  
@@ -27,7 +27,7 @@ Log-based metrics are aggregated at query time and require more processing to pr
 Question: Which of the following metrics are pre-aggregated?
 
 - [ ] Log based metrics
-- [x] Standard metrics
+- [ ] Standard metrics
 - [ ] All metrics
 - [ ] Metrics cannot be pre-aggregated
 - [ ] Only metrics enabled by the developer
@@ -50,7 +50,7 @@ catch(Exception ex)
 - [ ] Diagnostic trace listener
 - [ ] The Trace.aspx page
 - [ ] Application Insights
-- [x] Event Log
+- [ ] Event Log
 
 Answer: The exception gets logged to Event Log. The Write method of the EventSource class allows you to log data to the Event Log.
 
@@ -67,7 +67,7 @@ catch(Exception ex)
 ```
 
 - [ ] Diagnostic trace listener
-- [x] The Trace.aspx page
+- [ ] The Trace.aspx page
 - [ ] Application Insights
 - [ ] Event Log
 
@@ -88,7 +88,7 @@ catch(Exception ex)
 
 - [ ] Diagnostic trace listener
 - [ ] The Trace.aspx page
-- [x] Application Insights
+- [ ] Application Insights
 - [ ] Event Log
 
 Answer: The exception gets logged to Application Insights.
@@ -103,7 +103,7 @@ telemetry.TrackEvent("WinGame");
 
 - [ ] Custom Metrics
 - [ ] Page Views
-- [x] Custom Events
+- [ ] Custom Events
 - [ ] Dependency Tracking
 
 Answer: The `TrackEvent` method is used to log custom events, which can be used to track user interactions or other significant occurrences within the application.
@@ -119,7 +119,7 @@ telemetry.TrackTrace("Monitor");
 Can you use `az monitor activity-log` to view it?
 
 - [ ] Yes
-- [x] No
+- [ ] No
 
 Answer: `az monitor activity-log` _cannot_ display data from Application Insight telemetry.
 
@@ -134,7 +134,7 @@ telemetry.TrackDependency("Database", "Query", startTime, timer.Elapsed, success
 - [ ] Custom Metrics
 - [ ] Page Views
 - [ ] Custom Events
-- [x] Dependency Tracking
+- [ ] Dependency Tracking
 
 Answer: The `TrackDependency` method is used to log calls to external dependencies, such as databases, services, or other external resources. This information can be used to monitor the performance and success rate of these calls, helping to identify potential bottlenecks or failures in the system.
 
@@ -142,9 +142,9 @@ Answer: The `TrackDependency` method is used to log calls to external dependenci
 
 Question: You have a very old Azure function app and you want to integrate it with Application Insights to save informational log data. Which tasks should you perform?
 
-- [x] Call the `LogInformation` method of the `ILogger` class.
-- [x] Manually enable Application Insights in the function app.
-- [x] Store the name of the instrumentation key in an app setting named `APPINSIGHTS_INSTRUMENTATIONKEY`.
+- [ ] Call the `LogInformation` method of the `ILogger` class.
+- [ ] Manually enable Application Insights in the function app.
+- [ ] Store the name of the instrumentation key in an app setting named `APPINSIGHTS_INSTRUMENTATIONKEY`.
 - [ ] Call the `TrackEvent` method of the `TelemetryClient` class.
 - [ ] Disable built-in logging in the function app.
 - [ ] Add the Azure App Insights into function App using RBAC.
@@ -159,7 +159,7 @@ Azure function apps use app settings to find the Application Insights key, not s
 
 Question: In your organization, you are working on an ASP.NET web application that is hosted on a development server within the company's internal network. Before transitioning the application to the production server, you must gather performance data from various global locations. What action should you take?
 
-- [x] Implement a URL ping test using Application Insights.
+- [ ] Implement a URL ping test using Application Insights.
 - [ ] Set up HTTP forwarding through an Application Gateway.
 - [ ] Establish a VPN connection with a Global Network.
 - [ ] Utilize a Load Balancer across diverse availability regions.
@@ -174,7 +174,7 @@ Question: In Application Insights, what does the Users tool specifically count?
 
 - [ ] Page views
 - [ ] Button clicks
-- [x] People using the app
+- [ ] People using the app
 - [ ] User sessions
 
 Answer: The Users tool in Application Insights counts how many people have used the app and its features.
@@ -183,8 +183,8 @@ Answer: The Users tool in Application Insights counts how many people have used 
 
 Question: When session resets?
 
-- [x] After 30 minutes of inactivity
-- [x] After 24 hours of continuous use
+- [ ] After 30 minutes of inactivity
+- [ ] After 24 hours of continuous use
 - [ ] On application error
 - [ ] Never
 
@@ -195,7 +195,7 @@ Answer: In Application Insights, a session is reset after half an hour of user i
 Question: Which of the following can be represented as a custom event in Application Insights?
 
 - [ ] A page view
-- [x] A user interaction like a button selection
+- [ ] A user interaction like a button selection
 - [ ] A session reset
 - [ ] Both A and B
 
@@ -206,7 +206,7 @@ Answer: Custom events in Application Insights often represent specific occurrenc
 Question: In Application Insights, if a single person uses different browsers or machines, how are they counted in the Users tool?
 
 - [ ] As one user
-- [x] As more than one user
+- [ ] As more than one user
 - [ ] As an inactive user
 - [ ] Not counted
 
@@ -218,7 +218,7 @@ Question: What tool should you use in Application Insights to monitor page views
 
 - [ ] Users tool
 - [ ] Sessions tool
-- [x] Events tool
+- [ ] Events tool
 - [ ] Custom Events tool
 
 Answer: The Events tool in Application Insights is used to measure how often pages and features are used, including counting when a browser loads a page from your app.
@@ -230,7 +230,7 @@ Question: You're a product manager for an e-commerce site and want to understand
 - [ ] Users
 - [ ] Sessions
 - [ ] Events
-- [x] Funnels
+- [ ] Funnels
 - [ ] Cohorts
 - [ ] Impact
 - [ ] Retention
@@ -246,7 +246,7 @@ Question: As a marketing analyst, you're tasked with determining how website per
 - [ ] Events
 - [ ] Funnels
 - [ ] Cohorts
-- [x] Impact
+- [ ] Impact
 - [ ] Retention
 - [ ] User Flows
 
@@ -260,7 +260,7 @@ Question: You're leading a team that's launching a new feature, and you want to 
 - [ ] Sessions
 - [ ] Events
 - [ ] Funnels
-- [x] Cohorts
+- [ ] Cohorts
 - [ ] Impact
 - [ ] Retention
 - [ ] User Flows
@@ -277,7 +277,7 @@ Question: As a community manager for an online gaming platform, you want to unde
 - [ ] Funnels
 - [ ] Cohorts
 - [ ] Impact
-- [x] Retention
+- [ ] Retention
 - [ ] User Flows
 
 Answer: Retention is the feature that helps you understand how many users return to your app and how often they engage with specific tasks or goals. It provides insights into user loyalty and repeated engagement with the app.
@@ -286,7 +286,7 @@ Answer: Retention is the feature that helps you understand how many users return
 
 Question: You are a digital marketing manager and want to assess the impact of a recent marketing campaign on your website. You need to determine how many people used your application. Which Azure Insights feature would you use to analyze this information?
 
-- [x] Users
+- [ ] Users
 - [ ] Sessions
 - [ ] Events
 - [ ] Funnels
@@ -308,7 +308,7 @@ Question: You're a UX designer working on improving the navigation of a content-
 - [ ] Cohorts
 - [ ] Impact
 - [ ] Retention
-- [x] User Flows
+- [ ] User Flows
 
 Answer: You would use the "User Flows" feature in Azure Insights to analyze these navigation patterns.
 
@@ -318,7 +318,7 @@ Question: What is the primary purpose of the connection string in Application In
 
 - [ ] Authenticates the Application Insights SDK
 - [ ] Controls the visual appearance of telemetry data
-- [x] Controls where telemetry is sent
+- [ ] Controls where telemetry is sent
 - [ ] Encrypts telemetry data for secure transmission
 
 Answer: The connection string in Application Insights is used to define where the telemetry data is sent.  
@@ -339,7 +339,7 @@ Answer: Application Insights already takes care of this for you. Manually captur
 
 Question: Your web application must be able to scale on demand. Which Azure Application Insights data model should you use?
 
-- [x] An Application Insights metric
+- [ ] An Application Insights metric
 - [ ] An Application Insights dependency
 - [ ] An Application Insights trace
 - [ ] An Application Insights event
@@ -350,7 +350,7 @@ Answer: You can use Application Insights metrics to scale Web Apps.
 
 Question: Your ASP.NET application is generating a high volume of telemetry data, causing you to exceed your data quota. You want to reduce the telemetry traffic while maintaining a statistically correct analysis. Which sampling method would you use?
 
-- [x] Adaptive Sampling
+- [ ] Adaptive Sampling
 - [ ] Fixed-rate Sampling
 - [ ] Ingestion Sampling
 
@@ -361,7 +361,7 @@ Answer: Adaptive sampling automatically adjusts the volume of telemetry sent fro
 Question: You have a Java application and you need fine-grained control to apply different sampling rates to selected dependencies, requests, and health checks. Which sampling method would you use?
 
 - [ ] Adaptive Sampling
-- [x] Fixed-rate Sampling
+- [ ] Fixed-rate Sampling
 - [ ] Ingestion Sampling
 
 Answer: Fixed-rate sampling is available for Java applications and allows you to set the rate yourself. It also supports sampling overrides for fine-grained control over telemetry.
@@ -372,7 +372,7 @@ Question: You have a running application and you want to control the rate of dat
 
 - [ ] Adaptive Sampling
 - [ ] Fixed-rate Sampling
-- [x] Ingestion Sampling
+- [ ] Ingestion Sampling
 
 Answer: Ingestion sampling happens at the Application Insights service endpoint and allows you to set the sampling rate without redeploying your app. It helps you keep within your monthly quota.
 
