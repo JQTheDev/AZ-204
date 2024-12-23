@@ -2,10 +2,10 @@
 
 Question: How can you modify or revoke a stored access policy in Azure Storage?
 
-- [x] Call the access control list operation for the resource type to replace the existing policy.
-- [x] Delete the stored access policy.
-- [x] Rename it by changing the signed identifier.
-- [x] Change the expiry time to a value in the past.
+- [ ] Call the access control list operation for the resource type to replace the existing policy.
+- [ ] Delete the stored access policy.
+- [ ] Rename it by changing the signed identifier.
+- [ ] Change the expiry time to a value in the past.
 - [ ] Regenerate the SAS token.
 - [ ] Modify the storage account key.
 
@@ -131,7 +131,7 @@ Question: Which of the following types of shared access signatures (SAS) applies
 
 - [ ] Account SAS
 - [ ] Service SAS
-- [x] User delegation SAS
+- [ ] User delegation SAS
 
 Answer: A user delegation SAS is secured with Microsoft Entra ID credentials and also by the permissions specified for the SAS. A user delegation SAS applies to Blob storage only.  
 An account SAS delegates access to resources in one or more of the storage services. All of the operations available via a service or user delegation SAS are also available via an account SAS.  
@@ -141,7 +141,7 @@ A service SAS delegates access to a resource in the following Azure Storage serv
 
 Question: Which of the following best practices provides the most flexible and secure way to use a service or account shared access signature (SAS)?
 
-- [x] Associate SAS tokens with a stored access policy.
+- [ ] Associate SAS tokens with a stored access policy.
 - [ ] Always use HTTPS
 - [ ] Implement a user delegation SAS
 
