@@ -3,7 +3,7 @@
 Question: How a user can obtain their own photo in Graph?
 
 - [ ] `https://graph.microsoft.com/v1.0/me/photo/`
-- [x] `https://graph.microsoft.com/v1.0/me/photo/$value`
+- [ ] `https://graph.microsoft.com/v1.0/me/photo/$value`
 - [ ] `https://graph.microsoft.com/v1.0/me/photo/value`
 - [ ] `https://graph.microsoft.com/v1.0/me/photo/$src`
 - [ ] `https://graph.microsoft.com/v1.0/me/photo/src`
@@ -14,7 +14,7 @@ Answer: `https://graph.microsoft.com/v1.0/me/photo/$value`
 
 Question: How a user can obtain the metadata of their own photo in Graph?
 
-- [x] `https://graph.microsoft.com/v1.0/me/photo/`
+- [ ] `https://graph.microsoft.com/v1.0/me/photo/`
 - [ ] `https://graph.microsoft.com/v1.0/me/photo/$metadata`
 - [ ] `https://graph.microsoft.com/v1.0/me/photo/metadata`
 - [ ] `https://graph.microsoft.com/v1.0/me/photo/$info`
@@ -38,7 +38,7 @@ Question: What is the proper way to select `displayName` field of current user?
 
 - [ ] `https://graph.microsoft.com/v1.0/me?$select=givenName`
 - [ ] `https://graph.microsoft.com/v1.0/me?select=displayName`
-- [x] `https://graph.microsoft.com/v1.0/me?$select=displayName`
+- [ ] `https://graph.microsoft.com/v1.0/me?$select=displayName`
 - [ ] `https://graph.microsoft.com/v1.0/me/displayName`
 - [ ] `https://graph.microsoft.com/v1.0/me?fields=displayName`
 - [ ] `https://graph.microsoft.com/v1.0/me?$fields=displayName`
@@ -50,7 +50,7 @@ Answer: `/me?$select=displayName`
 
 Question: You are tasked with building a web service that integrates with Microsoft Graph. You need to fetch users who have the job title "Developer" and only return their email addresses. Which of the following query parameter combinations should you use?
 
-- [x] `?$filter=jobTitle eq 'Developer'&$select=email`
+- [ ] `?$filter=jobTitle eq 'Developer'&$select=email`
 - [ ] `?$filter=equals(jobTitle,'Developer')&$select=email`
 - [ ] `?$filter=jobTitle eq 'Developer'&$only=email`
 - [ ] `?$filter=equals(jobTitle,'Developer')&$only=email`
@@ -62,7 +62,7 @@ Answer: Use `$filter` query parameter with the correct syntax `jobTitle eq 'Deve
 Question: Which HTTP method below is used to update a resource with new values?
 
 - [ ] POST
-- [x] PATCH
+- [ ] PATCH
 - [ ] PUT
 
 Answer: The PATCH method does update a resource with a new value.  
@@ -75,7 +75,7 @@ Question: Which HTTP method below is used to replace a resource with a new one?
 
 - [ ] POST
 - [ ] PATCH
-- [x] PUT
+- [ ] PUT
 
 Answer: The PUT method replaces a resource with a new one.  
 The POST method creates a new resource.  
@@ -85,7 +85,7 @@ The PATCH method does update a resource with a new value.
 
 Question: Which HTTP method below is used to create a new resource?
 
-- [x] POST
+- [ ] POST
 - [ ] PATCH
 - [ ] PUT
 
@@ -98,7 +98,7 @@ The PATCH method does update a resource with a new value.
 Question: Which of the components of the Microsoft 365 platform is used to deliver data external to Azure into Microsoft Graph services and applications?
 
 - [ ] Microsoft Graph API
-- [x] Microsoft Graph connectors
+- [ ] Microsoft Graph connectors
 - [ ] Microsoft Graph Data Connect
 
 Answer: Microsoft Graph connectors work in the incoming direction. Connectors exist for many commonly used data sources such as Box, Google Drive, Jira, and Salesforce.  
@@ -110,7 +110,7 @@ Microsoft Graph Data Connect provides a set of tools to streamline secure and sc
 Question: Which of the following endpoints may assume the resource as Microsoft Graph when the resource identifier is omitted in the scope parameter?
 
 - [ ] Synchronization
-- [x] Consent
+- [ ] Consent
 - [ ] Processing
 - [ ] Access
 
@@ -134,7 +134,7 @@ Content-type: application/json
 
 - [ ] GET
 - [ ] POST
-- [x] PATCH
+- [ ] PATCH
 - [ ] PUT
 
 Answer: The PATCH method does update a resource with a new value.
@@ -145,7 +145,7 @@ Question: Which of the following headers is mandatory in the response from Micro
 
 - [ ] Authorization
 - [ ] Content-Type
-- [x] request-id
+- [ ] request-id
 - [ ] If-Match
 
 Answer: request-id is always included in responses from Microsoft Graph. It is useful for diagnosing issues and for support purposes, as it allows the Microsoft support team to trace the request in their logs.  
@@ -160,7 +160,7 @@ Question: You are developing a web application that will utilize Microsoft Graph
 - [ ] Apply the `User` constraint.
 - [ ] Specify the `Read.All` constraint.
 - [ ] Implement the `Files` constraint.
-- [x] Leave the constraint part blank.
+- [ ] Leave the constraint part blank.
 - [ ] Use the User.ReadBasic.All permission.
 
 Answer: By leaving the constraint part blank, the `User.Read` permission will only allow the app to perform read operations on the signed-in user's profile, without any additional constraints.  
@@ -173,7 +173,7 @@ Answer: By leaving the constraint part blank, the `User.Read` permission will on
 Question: The app is granted the `Calendars.Read` permission to access Microsoft 365 calendar services from your new web app through Microsoft Graph. You need to ensure that the app can not only access the calendars owned by the signed-in user but also the calendars that other users have shared with the signed-in user. How should you configure the permission?
 
 - [ ] Apply rhe `ReadWrite` constraint.
-- [x] Apply the `Shared`` constraint.
+- [ ] Apply the `Shared`` constraint.
 - [ ] Leave the constraint blank.
 - [ ] Use the `User.Read` permission.
 
@@ -183,12 +183,12 @@ Answer: The correct way to ensure that the app can read both the calendars owned
 
 Question: Which of the following permissions require admin consent?
 
-- [x] `AppCatalog.Submit`
-- [x] `BusinessScenarioConfig.Read.OwnedBy`
-- [x] `Calendars.ReadBasic`
+- [ ] `AppCatalog.Submit`
+- [ ] `BusinessScenarioConfig.Read.OwnedBy`
+- [ ] `Calendars.ReadBasic`
 - [ ] `Calendars.Read.Shared`
 - [ ] `Users.Read`
-- [x] `Users.Read.All`
+- [ ] `Users.Read.All`
 
 Answer: Rule of thumb - everything ending with ".All".
 
@@ -196,9 +196,9 @@ Answer: Rule of thumb - everything ending with ".All".
 
 Question: You are building an application that leverages the Microsoft Graph API to manage user activities. You need to retrieve the most recent activities for a user and also be able to update a specific activity. Which REST API calls should you opt for?
 
-- [x] `GET /me/activities/recent`
+- [ ] `GET /me/activities/recent`
 - [ ] `GET /me/activities`
-- [x] `PATCH /me/activities/{activityId}`
+- [ ] `PATCH /me/activities/{activityId}`
 - [ ] `POST /me/activities`
 - [ ] `PUT /me/activities/{activityId}/recent`
 
