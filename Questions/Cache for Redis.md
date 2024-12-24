@@ -3,7 +3,7 @@
 Question: What is the lowest service tier of Azure Cache for Redis recommended for use in production scenarios?
 
 - [ ] Basic
-- [x] Standard
+- [ ] Standard
 - [ ] Premium
 
 Answer: The standard tier is the lowest tier that offers replication，which is always recommended for production scenarios.
@@ -12,7 +12,7 @@ Answer: The standard tier is the lowest tier that offers replication，which is 
 
 Question: Which of the following choices represents the expire time resolution when applying a time to live (TTL) to a key in Redis?
 
-- [x] 1-millisecond
+- [ ] 1-millisecond
 - [ ] 10-milliseconds
 - [ ] seconds or milliseconds
 
@@ -23,7 +23,7 @@ Expirations can be set using seconds or milliseconds precision, but the expire t
 
 Question: Your company is developing an ASP.NET web application that requires a simple and fast method to store session state information. The application is not expected to scale, and there's no need for distributed storage. You need to identify the best method to store session state. What should you use?
 
-- [x] In Memory Cache
+- [ ] In Memory Cache
 - [ ] Sql Server
 - [ ] Cosmos DB
 - [ ] Cache for Redis at Standard Tier
@@ -36,7 +36,7 @@ Answer: Simple and fast, suitable for non-scalable applications.
 Question: Your company is developing an ASP.NET web application that requires storing session state information in persistent storage. The application must be scalable, and performance is a concern. Additionally, the solution must support concurrent access to the same session state data and be optimized for use with relational databases. You need to identify the best method to store session state. What should you use?
 
 - [ ] In Memory Cache
-- [x] Sql Server
+- [ ] Sql Server
 - [ ] Cosmos DB
 - [ ] Cache for Redis at Standard Tier
 - [ ] Cache for Redis at Premium Tier
@@ -51,7 +51,7 @@ Question: Your company is developing an ASP.NET web application that requires a 
 - [ ] In Memory Cache
 - [ ] Sql Server
 - [ ] Cosmos DB
-- [x] Cache for Redis at Standard Tier
+- [ ] Cache for Redis at Standard Tier
 - [ ] Cache for Redis at Premium Tier
 
 Answer: Combines simplicity, speed, scalability, supports concurrent access, and is optimized for cost, making it suitable for handling transient network failures.
@@ -64,7 +64,7 @@ Question: Your company is developing an ASP.NET web application that requires a 
 - [ ] Sql Server
 - [ ] Cosmos DB
 - [ ] Cache for Redis at Standard Tier
-- [x] Cache for Redis at Premium Tier
+- [ ] Cache for Redis at Premium Tier
 
 Answer: Offers premium features, scalability, speed, supports concurrent access, and provides higher performance capabilities, making it suitable for handling transient network failures.
 
@@ -77,7 +77,7 @@ Question: After acquiring Twitter, Elon Musk, in a moment of alcohol-induced "in
 - [ ] Cache for Redis at Premium Tier
 - [ ] A Giant Neural Network Powered by Starlink Satellites
 - [ ] A Custom-Built Database Using Tesla Batteries
-- [x] Azure Cosmos DB
+- [ ] Azure Cosmos DB
 - [ ] A Room Full of Floppy Disks Managed by a Team of Robots
 
 Answer: While the other extravagant options might appeal to Musk's sense of innovation and flair, Cosmos DB is the only realistic solution that currently exists and meets the requirements of global distribution, scalability, and concurrent access, while being totally unsuited for that in terms of cost and complexity (e.g. "Musk-esque").
@@ -148,7 +148,7 @@ EXPIRE userData 60
 When will `userData` expire?
 
 - [ ] 60ms
-- [x] 60s
+- [ ] 60s
 - [ ] 60h
 - [ ] 60 days
 
@@ -159,7 +159,7 @@ Answer: `EXPIRE key seconds [NX | XX | GT | LT]`
 Question: You are a developer for a company that uses Redis for caching user information. Due to security compliance requirements, user data should not be persisted in the cache for more than one minute. If the key already exists, the expiration time should not be updated. Which of the following Redis commands would you use to set the expiration time for a key named userData to one minute and only apply the command if the key does not exist?
 
 - [ ] EXPIRE userData 60 EX
-- [x] EXPIRE userData 60 NX
+- [ ] EXPIRE userData 60 NX
 - [ ] EXPIRE userData 60 XX
 - [ ] EXPIRE userData 1 EX
 - [ ] EXPIRE userData 1 NX
@@ -174,7 +174,7 @@ Question: For your new web application, you're setting up the `maxmemory` policy
 - [ ] noeviction
 - [ ] allkeys-lru
 - [ ] allkeys-lfu
-- [x] volatile-lru
+- [ ] volatile-lru
 - [ ] volatile-lfu
 - [ ] allkeys-random
 - [ ] volatile-random
@@ -186,11 +186,11 @@ Answer: volatile: if expiration is set; lru - least recently used.
 
 Question: Which of the following scenarios are suitable for Private Caching?
 
-- [x] A single-user application that requires rapid access to user-specific data.
+- [ ] A single-user application that requires rapid access to user-specific data.
 - [ ] A distributed system where multiple instances need to access the same view of cached data.
-- [x] A desktop application that needs to store temporary files locally for quick retrieval.
+- [ ] A desktop application that needs to store temporary files locally for quick retrieval.
 - [ ] A large-scale web application that requires a common cache accessible by various servers.
-- [x] A personal finance tool that caches individual user's financial data on their device for quick access.
+- [ ] A personal finance tool that caches individual user's financial data on their device for quick access.
 - [ ] A global weather application that needs to provide consistent weather data to users across different regions.
 
 Answer: Private Caching is best suited for scenarios where data is specific to individual instances or users, and speed is a priority. It's simpler but may lead to inconsistencies between different instances.
@@ -200,11 +200,11 @@ Answer: Private Caching is best suited for scenarios where data is specific to i
 Question: Which of the following scenarios are suitable for Shared Caching?
 
 - [ ] A small mobile app that stores user preferences on the device itself.
-- [x] An e-commerce platform where product details are frequently accessed by multiple users and need to be consistent across various servers.
-- [x] A content delivery network (CDN) that requires caching of static content across multiple geographical locations.
+- [ ] An e-commerce platform where product details are frequently accessed by multiple users and need to be consistent across various servers.
+- [ ] A content delivery network (CDN) that requires caching of static content across multiple geographical locations.
 - [ ] A standalone desktop application that caches user-specific settings locally.
-- [x] A multi-player online game where player profiles and scores need to be consistent across different game servers.
-- [x] A corporate intranet that needs to cache common resources like logos and templates for consistent branding across different departments.
+- [ ] A multi-player online game where player profiles and scores need to be consistent across different game servers.
+- [ ] A corporate intranet that needs to cache common resources like logos and templates for consistent branding across different departments.
 
 Answer: Shared Caching is ideal for situations where consistency and scalability are essential, and the data needs to be accessed by multiple instances or applications. It may be more complex to implement and slightly slower to access.
 
@@ -212,7 +212,7 @@ Answer: Shared Caching is ideal for situations where consistency and scalability
 
 Question: You are designing a cache for a video editing application where the most recently used video clips are unlikely to be needed again in the short term, while older clips are frequently revisited. What eviction policy would be most suitable?
 
-- [x] Most-Recently-Used (MRU)
+- [ ] Most-Recently-Used (MRU)
 - [ ] First-In-First-Out (FIFO)
 - [ ] Explicit Removal
 
@@ -223,7 +223,7 @@ Answer: Since the most recently used clips are less likely to be needed again so
 Question: You are managing a cache for a data processing system that handles tasks in a sequential order, and older tasks are unlikely to be revisited. What eviction policy would be best?
 
 - [ ] Most-Recently-Used (MRU)
-- [x] First-In-First-Out (FIFO)
+- [ ] First-In-First-Out (FIFO)
 - [ ] Explicit Removal
 
 Answer: In a system where older data is less likely to be accessed and tasks are handled sequentially, a FIFO policy would be beneficial.
@@ -234,7 +234,7 @@ Question: You are working on a database caching system where certain data must b
 
 - [ ] Most-Recently-Used (MRU)
 - [ ] First-In-First-Out (FIFO)
-- [x] Explicit Removal
+- [ ] Explicit Removal
 
 Answer: For a system where data eviction is triggered by specific events, an explicit removal policy would provide the necessary control and accuracy.
 
@@ -243,7 +243,7 @@ Answer: For a system where data eviction is triggered by specific events, an exp
 Question: What feature in Azure Cache for Redis links two Premium instances?
 
 - [ ] Load Balancing
-- [x] Geo-replication
+- [ ] Geo-replication
 - [ ] Sharding
 - [ ] Data Partitioning
 - [ ] Virtual Network
@@ -272,8 +272,8 @@ cache.KeyDelete("teamsList");
 Question: To enhance performance and ensure data consistency between your data store and cache, under what circumstances would the Cache-Aside pattern be appropriate? Select two correct answers from the options below.
 
 - [ ] When the data to be cached can be completely loaded when the application starts
-- [x] When the cache lacks built-in support for read-through and write-through operations
-- [x] When the demand for resources is highly variable
+- [ ] When the cache lacks built-in support for read-through and write-through operations
+- [ ] When the demand for resources is highly variable
 - [ ] When you need to cache web session state information across multiple servers
 
 Answer: Cache-Aside pattern is ideal for scenarios where native read-through and write-through operations are not supported by the cache. It also allows for on-demand data loading, making it suitable for situations with fluctuating resource demand.
@@ -284,7 +284,7 @@ Question: You are using Azure Cache for Redis to improve the performance of your
 
 - [ ] HttpContext.Items
 - [ ] ViewState
-- [x] Session state
+- [ ] Session state
 - [ ] Application state
 - [ ] Query strings
 - [ ] Cookies
