@@ -3,7 +3,7 @@
 Question: Each Azure subscription has default limits on resources needed for an Azure Content Delivery Network (CDN). Which resources have subscription limitations you need to consider for your solution?
 
 - [ ] Resource Group
-- [x] CDN profiles
+- [ ] CDN profiles
 - [ ] Storage account
 
 Answer: The number of CDN profiles that can be created is limited by the type of Azure subscription.  
@@ -14,7 +14,7 @@ Storage accounts aren't a resource used in Azure CDNs.
 
 Question: When you publish a website through Azure Content Delivery Network, the files on that site are cached until their time-to-live (TTL) expires. What is the default TTL for large file optimizations?
 
-- [x] One day
+- [ ] One day
 - [ ] One week
 - [ ] One year
 
@@ -26,7 +26,7 @@ Media streaming optimizations have a default TTL of one year.
 
 Question: You are developing a platform that streams educational content to students worldwide. The platform uses a continuous integration and deployment pipeline. Your primary objectives are to guarantee that the platform remains highly accessible and that students receive a steady streaming service. Moreover, you aim to save the content in a location geographically closest to the student. Which Azure service would best fit this requirement?
 
-- [x] Azure CDN
+- [ ] Azure CDN
 - [ ] Azure Cache for Redis
 - [ ] Azure Blob Storage
 - [ ] Azure App Service Plan
@@ -38,8 +38,8 @@ Answer: Azure CDN caches content in multiple locations globally, ensuring users 
 
 Question: Which products support asset pre-loading?
 
-- [x] Azure CDN Premium from Edgio
-- [x] Azure CDN Standard from Edgio
+- [ ] Azure CDN Premium from Edgio
+- [ ] Azure CDN Standard from Edgio
 - [ ] Standard Microsoft
 - [ ] Standard Akamai
 
@@ -49,7 +49,7 @@ Answer: Azure CDN from Edgio only
 
 Question: Which product supports real-time stats and alerts?
 
-- [x] Azure CDN Premium from Edgio
+- [ ] Azure CDN Premium from Edgio
 - [ ] Azure CDN Standard from Edgio
 - [ ] Standard Microsoft
 - [ ] Standard Akamai
@@ -60,9 +60,9 @@ Answer: Azure CDN Premium from Edgio only
 
 Question: Which products support brotli compression?
 
-- [x] Azure CDN Premium from Edgio
-- [x] Azure CDN Standard from Edgio
-- [x] Standard Microsoft
+- [ ] Azure CDN Premium from Edgio
+- [ ] Azure CDN Standard from Edgio
+- [ ] Standard Microsoft
 
 Answer: All of the listed
 
@@ -72,7 +72,7 @@ Question: What is the primary difference between versioning and purging in CDN m
 
 - [ ] Versioning deletes content; purging updates it.
 - [ ] Versioning and purging both clear content from local caches.
-- [x] Versioning assigns new URLs for updates; purging removes content from edge servers.
+- [ ] Versioning assigns new URLs for updates; purging removes content from edge servers.
 - [ ] Versioning and purging both require deleting the CDN endpoint.
 
 Answer: Versioning assigns new URLs for updates; purging removes content from edge servers.
@@ -81,8 +81,8 @@ Answer: Versioning assigns new URLs for updates; purging removes content from ed
 
 Question: Why might you want to purge cached content from all edge nodes in a CDN?
 
-- [x] To free storage space.
-- [x] To update assets that contain incorrect information or update a web application.
+- [ ] To free storage space.
+- [ ] To update assets that contain incorrect information or update a web application.
 - [ ] To create a new CDN endpoint.
 - [ ] To rollback to a previous version of the content.
 
@@ -93,7 +93,7 @@ Answer: To update assets that contain incorrect information or update a web appl
 Question: What does purging NOT affect in a CDN?
 
 - [ ] Edge servers.
-- [x] Local browser caches.
+- [ ] Local browser caches.
 - [ ] New URLs.
 - [ ] Incorrect information.
 
@@ -104,7 +104,7 @@ Answer: Local browser caches.
 Question: If you want to force a downstream client to request the latest version of a file, what can you do?
 
 - [ ] Purge the edge servers.
-- [x] Give the file a unique name every time you update it or use query string caching.
+- [ ] Give the file a unique name every time you update it or use query string caching.
 - [ ] Reduce the file's time-to-live (TTL).
 
 Answer: Changing the file's name or using query string caching ensures the client sees it as new content, forcing a request for the latest version.  
@@ -116,7 +116,7 @@ Reducing TTL affects edge server caching but may not force downstream clients to
 Question: How can deleting and recreating a CDN endpoint be considered in the context of content management?
 
 - [ ] It's a method to version the assets.
-- [x] It's another way to purge the content, effectively clearing the cached content from edge servers.
+- [ ] It's another way to purge the content, effectively clearing the cached content from edge servers.
 - [ ] It forces all local browser caches to update.
 - [ ] It increases the file's time-to-live (TTL).
 
@@ -128,7 +128,7 @@ Question: In Azure CDN, to reset the cache duration of a file cached before a ru
 
 - [ ] Modify the file
 - [ ] Delete the file
-- [x] Purge the file
+- [ ] Purge the file
 - [ ] Archive the file
 - [ ] None of the listed
 
@@ -141,7 +141,7 @@ Question: What are the Azure CDN configuration propagation times for Standard (V
 
 - [ ] Instant
 - [ ] Around 1 minute.
-- [x] Around 10 minutes.
+- [ ] Around 10 minutes.
 - [ ] Around 1 hour.
 
 Answer: 1 minute is for Standard (Akamai).
@@ -151,7 +151,7 @@ Answer: 1 minute is for Standard (Akamai).
 Question: What are the Azure CDN configuration propagation times for Standard (Akamai):
 
 - [ ] Instant
-- [x] Around 1 minute.
+- [ ] Around 1 minute.
 - [ ] Around 10 minutes.
 - [ ] Around 1 hour.
 
@@ -164,7 +164,7 @@ Question: An Azure developer has configured a web application and also integrate
 - [ ] Ignore query strings
 - [ ] Use default setting
 - [ ] Bypass caching
-- [x] Cache every unique URL
+- [ ] Cache every unique URL
 
 Answer: To meet the requirement of caching requests that include an ID parameter, the setting should be 'Cache each distinct URL'. This ensures that each unique URL, including the query string, is cached.
 
@@ -175,7 +175,7 @@ Question: You are tasked with developing an ASP.Net application for an on-demand
 - [ ] Default
 - [ ] Set if missing
 - [ ] Bypass cache
-- [x] Override
+- [ ] Override
 
 Answer: In this scenario, to make certain that all video content is removed from the cache after a 60-minute period, the 'Apply custom rules' or 'Override' setting must be selected.
 
@@ -183,12 +183,12 @@ Answer: In this scenario, to make certain that all video content is removed from
 
 Question: Click on the following steps in the correct order to explain how Azure CDN works:
 
-- [x] The request is directed to the nearest server location, also known as Point of Presence (POP).
-- [x] The file stays in the cache until its time-to-live (TTL) expires.
-- [x] The file is then sent to the user from the POP server and stored there for future requests.
-- [x] If the file isn’t in the server’s cache, it’s fetched from the origin server.
-- [x] A user requests a file using a special URL.
-- [x] This cached file can be quickly sent to any other users requesting the same file, providing a faster user experience.
+- [ ] The request is directed to the nearest server location, also known as Point of Presence (POP).
+- [ ] The file stays in the cache until its time-to-live (TTL) expires.
+- [ ] The file is then sent to the user from the POP server and stored there for future requests.
+- [ ] If the file isn’t in the server’s cache, it’s fetched from the origin server.
+- [ ] A user requests a file using a special URL.
+- [ ] This cached file can be quickly sent to any other users requesting the same file, providing a faster user experience.
 
 Answer:
 
@@ -203,14 +203,14 @@ Answer:
 
 Question: You have configured an Azure Front Door service to route requests to web applications in the Azure Web App service. A request is made for a 10 MB XML file with Brotli compression, but the file is not being compressed. What could be the reasons for this issue?
 
-- [x] The XML file exceeds Azure Front Door's file size limit for compression.
-- [x] The `Content-Type` header for the XML file is not set to a type that Azure Front Door is configured to compress.
+- [ ] The XML file exceeds Azure Front Door's file size limit for compression.
+- [ ] The `Content-Type` header for the XML file is not set to a type that Azure Front Door is configured to compress.
 - [ ] Brotli compression is not enabled in the Azure Front Door settings.
-- [x] The origin server where the Azure Web App is hosted is not configured to handle Brotli compression for XML files.
-- [x] The file was initially requested without compression settings and got cached.
+- [ ] The origin server where the Azure Web App is hosted is not configured to handle Brotli compression for XML files.
+- [ ] The file was initially requested without compression settings and got cached.
 - [ ] The XML file is encrypted, making it ineligible for compression.
 - [ ] Brotli compression does not support XML
-- [x] Caching is not enabled.
+- [ ] Caching is not enabled.
 
 Answer: File size limit is 1KB to 8MB. Compression only works when caching is enabled.  
 The question already states that a request was made for a file "with Brotli compression".
