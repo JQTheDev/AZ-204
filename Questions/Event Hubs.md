@@ -3,7 +3,7 @@
 Question: Which of the following Event Hubs concepts represents an ordered sequence of events that is held in an Event Hubs?
 
 - [ ] Consumer group
-- [x] Partition
+- [ ] Partition
 - [ ] Event Hubs producer
 
 Answer: A partition is an ordered sequence of events that is held in an Event Hub.  
@@ -14,7 +14,7 @@ An Event Hub producer is a type of client.
 
 Question: Which of the following options represents when an event processor marks or commits the position of the last successfully processed event within a partition?
 
-- [x] Checkpointing
+- [ ] Checkpointing
 - [ ] Scale
 - [ ] Load balance
 
@@ -26,7 +26,7 @@ Increase or reduce the consumers dynamically. The pool of consumers can rebalanc
 
 Question: Which of the following is a valid EventHub connection string?
 
-- [x] `Endpoint=sb://example-namespace.servicebus.windows.net/;SharedAccessKeyName=KeyName;SharedAccessKey=AccessKey`
+- [ ] `Endpoint=sb://example-namespace.servicebus.windows.net/;SharedAccessKeyName=KeyName;SharedAccessKey=AccessKey`
 - [ ] `sb://example-namespace.servicebus.windows.net/;SharedAccessKeyName=KeyName;SharedAccessKey=AccessKey`
 - [ ] `https://example-namespace.servicebus.windows.net/;SharedAccessKeyName=KeyName;SharedAccessKey=AccessKey`
 - [ ] `Endpoint=https://example-namespace.servicebus.windows.net/;SharedAccessKeyName=KeyName;SharedAccessKey=AccessKey`
@@ -38,8 +38,8 @@ Answer: `Endpoint=sb://...`
 Question: Specify the correct parameter for `EventHubProducerClient.SendAsync()` if `text` is of type `string`.
 
 - [ ] No parameter
-- [x] `new EventData(Encoding.UTF8.GetBytes(text))`
-- [x] `new EventData(text)`
+- [ ] `new EventData(Encoding.UTF8.GetBytes(text))`
+- [ ] `new EventData(text)`
 - [ ] `Encoding.UTF8.GetBytes(text)`
 - [ ] `text`
 
@@ -49,7 +49,7 @@ Answer: Prefer using `byte[]` with `EventData`.
 
 Question: Which class allows you to send messages in Event Hub?
 
-- [x] `EventHubProducerClient`
+- [ ] `EventHubProducerClient`
 - [ ] `EventHubConsumerClient`
 - [ ] `EventHubSender`
 - [ ] `EventHub`
@@ -60,7 +60,7 @@ Answer: `EventHubProducerClient`
 
 Question: In a distributed temperature monitoring system, various sensors are sending data to an Event Hub. You need to guarantee that the temperature readings from all sensors are processed in the exact sequence they were sent. How can you achieve this?
 
-- [x] Use a common partition key for all sensors.
+- [ ] Use a common partition key for all sensors.
 - [ ] Utilize the same EventHubProducerClient instance across all sensors.
 - [ ] Switch to Premium tier
 - [ ] Implement a buffering mechanism within the Event Hub.
@@ -72,7 +72,7 @@ Answer: You should use a common partition key for all sensors. By using the same
 Question: How does Event Hubs Capture handle scalability?
 
 - [ ] It requires manual scaling with throughput units
-- [x] It scales automatically with throughput units
+- [ ] It scales automatically with throughput units
 - [ ] It does not scale
 - [ ] It scales based on the number of partitions
 
@@ -83,7 +83,7 @@ Answer: Event Hubs Capture scales automatically with throughput units
 Question: Which of the following is true about the storage accounts in Event Hubs Capture?
 
 - [ ] They must be in the same region as your event hub
-- [x] They can be in any region
+- [ ] They can be in any region
 - [ ] They must be in a different region from your event hub
 
 Answer: Storage accounts can be in the same region as your event hub or in another region.
@@ -94,7 +94,7 @@ Question: What is the format in which captured data is written by Event Hubs Cap
 
 - [ ] JSON
 - [ ] XML
-- [x] Apache Avro
+- [ ] Apache Avro
 - [ ] CSV
 - [ ] YAML
 
@@ -106,7 +106,7 @@ Question: A global manufacturing company is deploying thousands of sensors acros
 
 - [ ] Azure IoT Hub
 - [ ] Azure Stream Analytics
-- [x] Event Hubs Capture
+- [ ] Event Hubs Capture
 - [ ] Azure Data Lake Analytics
 
 Answer: Event Hubs Capture allows automatic capturing of streaming data, can process real-time and batch-based pipelines on the same stream, and scales automatically with throughput units. It also supports storing the captured data in Azure Data Lake Storage.
@@ -117,7 +117,7 @@ Question: Which should you choose if you publish events frequently and you want 
 
 - [ ] Use HTTPS protocol
 - [ ] Use HTTP protocol
-- [x] Use AMQP protocol
+- [ ] Use AMQP protocol
 - [ ] You need Premium plan to achieve better performance
 - [ ] Event Hub is optimized for high throuput, lower latency scenarios by default
 
@@ -128,7 +128,7 @@ Tier does not affect performance.
 
 Question: Which protocol should you choose if you want to publish a single event, with minimal network cost?
 
-- [x] Use HTTPS protocol
+- [ ] Use HTTPS protocol
 - [ ] Use HTTP protocol
 - [ ] Use AMQP protocol
 - [ ] You need Dedicated plan to mimimize costs
@@ -141,7 +141,7 @@ Answer: AMQP requires a persistent bidirectional socket plus TLS or SSL/TLS, res
 Question: A healthcare organization is developing a real-time patient monitoring system. The system will monitor vital signs from patients in 5 different wards. The data from the sensors in each ward is sent to Azure Event Hubs for real-time analytics. Three different teams within the organization—Emergency Response, Data Analytics, and Hospital Administration—consume this data through Azure Web Apps for various purposes. You are tasked with setting up the Azure Event Hub for this system. Your goal is to optimize for high data throughput and low latency. How many partitions should you configure in the Azure Event Hub?
 
 - [ ] 3 Partitions
-- [x] 5 Partitions
+- [ ] 5 Partitions
 - [ ] 8 Partitions
 - [ ] 12 Partitions
 
@@ -156,7 +156,7 @@ Question: Your team is tasked with creating an application to collect data from 
 
 - [ ] Throughput Units
 - [ ] Partition Keys
-- [x] Event Hubs Capture
+- [ ] Event Hubs Capture
 - [ ] Event Streams
 
 Answer: To store data in Azure Blob Storage, you would use the Azure Event Hubs Capture feature. Azure Event Hubs Capture allows for the automatic saving of event data to Azure Blob Storage.
@@ -166,7 +166,7 @@ Answer: To store data in Azure Blob Storage, you would use the Azure Event Hubs 
 Question: Complete the following command: `az eventhubs ??? authorization-rule keys list --resource-group MyResourceGroupName --namespace-name MyNamespaceName --eventhub-name MyEventHubName --name SomeName`. What should you put instead of `???`?
 
 - [ ] `namespace`
-- [x] `eventhub`
+- [ ] `eventhub`
 - [ ] `get`
 - [ ] `show`
 
@@ -176,7 +176,7 @@ Answer: The command is to get connection string for a specific event hub within 
 
 Question: Complete the following command: `az eventhubs ??? authorization-rule keys list --resource-group MyResourceGroupName --namespace-name MyNamespaceName --name SomeName`. What should you put instead of `???`?
 
-- [x] `namespace`
+- [ ] `namespace`
 - [ ] `eventhub`
 - [ ] `get`
 - [ ] `show`
