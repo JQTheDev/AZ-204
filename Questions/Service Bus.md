@@ -25,8 +25,8 @@ using (var client = new ServiceBusClient(connectionString))
 Question: Specify the correct parameter for `ServiceBusSender.SendMessagesAsync()` if `text` is of type `string`.
 
 - [ ] No parameter
-- [x] `new ServiceBusMessage(Encoding.UTF8.GetBytes(text))`
-- [x] `new ServiceBusMessage(text)`
+- [ ] `new ServiceBusMessage(Encoding.UTF8.GetBytes(text))`
+- [ ] `new ServiceBusMessage(text)`
 - [ ] `Encoding.UTF8.GetBytes(text)`
 - [ ] `text`
 
@@ -78,7 +78,7 @@ Question: You are designing a notification system using Azure Service Bus. Messa
 
 You need to create a subscription that handles messages that are not generated from South America and not above 40 degrees. Which filter type should you implement?
 
-- [x] SqlRuleFilter
+- [ ] SqlRuleFilter
 - [ ] CorrelationRuleFilter
 - [ ] TrueRuleFilter
 - [ ] FalseRuleFilter
@@ -97,7 +97,7 @@ Question: You are building a ticketing system where messages contain:
 You need to create a subscription that handles only high-priority sports events. Which filter type should you implement?
 
 - [ ] SqlRuleFilter
-- [x] CorrelationRuleFilter
+- [ ] CorrelationRuleFilter
 - [ ] TrueRuleFilter
 - [ ] FalseRuleFilter
 - [ ] No filter
@@ -110,9 +110,9 @@ Question: You are developing a logging system that captures all messages in Azur
 
 - [ ] SqlRuleFilter
 - [ ] CorrelationRuleFilter
-- [x] TrueRuleFilter
+- [ ] TrueRuleFilter
 - [ ] FalseRuleFilter
-- [x] No filter
+- [ ] No filter
 
 Answer: A TrueFilter is a special filter that always returns true, meaning it selects all arriving messages without any conditions. In this scenario, where you need to capture every single message without any filtering, a TrueFilter is the appropriate choice, such as `new TrueRuleFilter()`. It ensures that all messages are selected for the subscription, fulfilling the requirement for complete logging.
 
@@ -123,7 +123,7 @@ Question: You are developing a logging system that captures all messages in Azur
 - [ ] SqlRuleFilter
 - [ ] CorrelationRuleFilter
 - [ ] TrueRuleFilter
-- [x] FalseRuleFilter
+- [ ] FalseRuleFilter
 - [ ] No filter
 
 Answer: A FalseRuleFilter is a specific filter that always returns false, meaning it will not select any incoming messages. In this case, where the system should not accept any messages at the moment, a FalseRuleFilter is the most suitable option, such as new `FalseRuleFilter()`. This ensures that no messages are selected for the subscription, aligning with the requirement to not capture any messages currently.
@@ -133,7 +133,7 @@ Answer: A FalseRuleFilter is a specific filter that always returns false, meanin
 Question: You are designing a notification system for a large organization using Azure Service Bus. The system must send updates to multiple subscribers whenever a new policy is published. Which feature of Azure Service Bus should you utilize to ensure that all subscribers receive the new policy notifications?
 
 - [ ] Queues
-- [x] Topics
+- [ ] Topics
 - [ ] Relay
 - [ ] Event Hub
 
@@ -144,7 +144,7 @@ Answer: Topics in Azure Service Bus are designed for one-to-many communication s
 Question: You are building a customer support system where each support ticket must be processed by exactly one support agent. You want to use Azure Service Bus to handle the distribution of support tickets. Which feature of Azure Service Bus would be most appropriate for ensuring that each ticket is processed by only one agent?
 
 - [ ] Topics
-- [x] Queues
+- [ ] Queues
 - [ ] Event Hub
 - [ ] Relay
 
@@ -154,7 +154,7 @@ Answer: Queues in Azure Service Bus are used for point-to-point connections, ens
 
 Question: You are developing a ticket booking system where the order of ticket booking messages is crucial. You want to ensure that the messages related to a single booking are processed in the order they were sent. Which Azure Service Bus feature should you use?
 
-- [x] Message sessions
+- [ ] Message sessions
 - [ ] Batching
 - [ ] Scheduled delivery
 - [ ] Transactions
@@ -169,7 +169,7 @@ Question: You are building a real-time analytics system that needs to process me
 - [ ] Transactions
 - [ ] Message deferral
 - [ ] Batching
-- [x] Parallel Stream Processing
+- [ ] Parallel Stream Processing
 
 Answer: Parallel Stream Processing can process messages as parallel, long-running streams using session ID.
 
@@ -177,7 +177,7 @@ Answer: Parallel Stream Processing can process messages as parallel, long-runnin
 
 Question: You want to chain a queue to another queue within the same namespace for better message routing. Which feature should you use?
 
-- [x] Autoforwarding
+- [ ] Autoforwarding
 - [ ] Transactions
 - [ ] Message deferral
 - [ ] Batching
@@ -189,7 +189,7 @@ Answer: Autoforwarding allows you to chain a queue or subscription to another wi
 
 Question: You are building a system where you need to hold messages that can't be delivered for later inspection. Which feature should you use?
 
-- [x] Dead-letter queue
+- [ ] Dead-letter queue
 - [ ] Message deferral
 - [ ] Transactions
 - [ ] Autoforwarding
@@ -201,7 +201,7 @@ Answer: Dead-letter queue holds messages that can't be delivered and allows for 
 
 Question: You are developing a system where certain messages should not be processed immediately but should remain in the queue for later retrieval. Which Azure Service Bus feature should you use?
 
-- [x] Message deferral
+- [ ] Message deferral
 - [ ] Scheduled delivery
 - [ ] Autoforwarding
 - [ ] Parallel Stream Processing
@@ -214,7 +214,7 @@ Scheduled delivery allows for delayed processing but doesn't set the message asi
 
 Question: You are building a financial system where multiple operations like debit and credit need to be executed as a single unit of work. Which feature should you use?
 
-- [x] Transactions
+- [ ] Transactions
 - [ ] Batching
 - [ ] Autoforwarding
 - [ ] Message deferral
@@ -227,7 +227,7 @@ Batching delays sending a message for a certain period but doesn't group operati
 
 Question: You are responsible for ensuring that your messaging system continues to function even if a datacenter goes down. Which feature should you use?
 
-- [x] Geo-disaster recovery
+- [ ] Geo-disaster recovery
 - [ ] Security
 - [ ] Autodelete on idle
 - [ ] Parallel Stream Processing
@@ -239,7 +239,7 @@ Parallel Stream Processing is for parallel, long-running streams but doesn't han
 
 Question: You are developing a logging system that needs to accumulate messages for a short period before sending them to reduce the number of network calls. Which Azure Service Bus feature should you use?
 
-- [x] Batching
+- [ ] Batching
 - [ ] Message sessions
 - [ ] Message deferral
 - [ ] Autoforwarding
@@ -253,7 +253,7 @@ Message sessions enable FIFO handling but don't delay sending messages.
 Question: You are tasked with building a component that will delay the activation of messages sent to an Azure Service Bus queue. Which of the following options should you use to achieve this functionality?
 
 - [ ] Configure the `LockDuration` property for the queue
-- [x] Configure the `ScheduledEnqueueTimeUtc` property for the messages
+- [ ] Configure the `ScheduledEnqueueTimeUtc` property for the messages
 - [ ] Configure the `TimeToLive` property for the queue messages
 - [ ] Configure the `Label` property for the messages
 
@@ -265,13 +265,13 @@ The LockDuration property is used to define how long a message is locked for pro
 
 Question: Which of the following strategies would be effective for optimizing a high-throughput queue in Azure Service Bus?
 
-- [x] Use asynchronous operations.
+- [ ] Use asynchronous operations.
 - [ ] Use synchronous operations.
-- [x] Use multiple message factories per process.
+- [ ] Use multiple message factories per process.
 - [ ] Use single message factories per process.
-- [x] Enable batched store access.
+- [ ] Enable batched store access.
 - [ ] Disable batched store access.
-- [x] Set a high prefetch count.
+- [ ] Set a high prefetch count.
 - [ ] Disable prefetching.
 
 Answer: Per [best practices](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements?tabs=net-standard-sdk-2#high-throughput-queue)
@@ -281,11 +281,11 @@ Answer: Per [best practices](https://learn.microsoft.com/en-us/azure/service-bus
 Answer: Which of the following would be effective for optimizing multiple high-throughput queues?
 
 - [ ] Use a single message factory for all queues.
-- [x] Use different factories for clients interacting with different queues.
-- [x] Enable batched store access.
+- [ ] Use different factories for clients interacting with different queues.
+- [ ] Enable batched store access.
 - [ ] Disable batched store access.
 - [ ] Use synchronous operations.
-- [x] Utilize asynchronous operations.
+- [ ] Utilize asynchronous operations.
 
 Answer: Per [best practices](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements?tabs=net-standard-sdk-2#multiple-high-throughput-queues)
 
@@ -294,11 +294,11 @@ Answer: Per [best practices](https://learn.microsoft.com/en-us/azure/service-bus
 Question: What strategies would minimize latency for a queue with small or moderate throughput when using a single client?
 
 - [ ] Use synchronous operations.
-- [x] Use asynchronous operations.
+- [ ] Use asynchronous operations.
 - [ ] Enable client-side batching.
 - [ ] Enable batched store access.
-- [x] Disable client-side batching and batched store access.
-- [x] Set a high prefetch count.
+- [ ] Disable client-side batching and batched store access.
+- [ ] Set a high prefetch count.
 - [ ] Disable prefetching.
 
 Answer: Per [best practices](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements?tabs=net-standard-sdk-2#low-latency-queue)
@@ -308,12 +308,12 @@ Answer: Per [best practices](https://learn.microsoft.com/en-us/azure/service-bus
 Question: What strategies would minimize latency for a queue with small or moderate throughput when using a multiple clients?
 
 - [ ] Use synchronous operations.
-- [x] Use asynchronous operations.
+- [ ] Use asynchronous operations.
 - [ ] Enable client-side batching.
 - [ ] Enable batched store access.
-- [x] Disable client-side batching and batched store access.
+- [ ] Disable client-side batching and batched store access.
 - [ ] Set a high prefetch count.
-- [x] Set the prefetch count to 0.
+- [ ] Set the prefetch count to 0.
 
 Answer: Per [best practices](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements?tabs=net-standard-sdk-2#low-latency-queue)
 
@@ -321,13 +321,13 @@ Answer: Per [best practices](https://learn.microsoft.com/en-us/azure/service-bus
 
 Question: Which strategies would be effective for a queue with a large number of senders?
 
-- [x] Use a single factory per process for each sender.
+- [ ] Use a single factory per process for each sender.
 - [ ] Use a multiple factory per process for each sender.
 - [ ] Disable batched store access.
-- [x] Enable batched store access.
-- [x] Use asynchronous operations.
+- [ ] Enable batched store access.
+- [ ] Use asynchronous operations.
 - [ ] Use synchronous operations.
-- [x] Set a high prefetch count.
+- [ ] Set a high prefetch count.
 - [ ] Set a low prefetch count.
 
 Answer: Per [best practices](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements?tabs=net-standard-sdk-2#queue-with-a-large-number-of-senders)
@@ -336,13 +336,13 @@ Answer: Per [best practices](https://learn.microsoft.com/en-us/azure/service-bus
 
 Question: What strategies would be effective for a queue with a large number of receivers?
 
-- [x] Use a single factory per process for each receiver.
+- [ ] Use a single factory per process for each receiver.
 - [ ] Use a multiple factory per process for each receiver.
 - [ ] Disable batched store access.
-- [x] Enable batched store access.
-- [x] Use asynchronous operations.
+- [ ] Enable batched store access.
+- [ ] Use asynchronous operations.
 - [ ] Use synchronous operations.
-- [x] Set the prefetch count to 20 times the processing rate of the receiver.
+- [ ] Set the prefetch count to 20 times the processing rate of the receiver.
 - [ ] Set a low prefetch count.
 
 Answer: Per [best practices](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-performance-improvements?tabs=net-standard-sdk-2#queue-with-a-large-number-of-receivers)
@@ -354,7 +354,7 @@ Question: In the engineering firm BuildMasters, various project proposals and co
 - [ ] `Endpoint=sb://sample-namespace.servicebus.windows.net/;Authentication=ManagedIdentity;TransportType=Sbmp`
 - [ ] `Endpoint=sb://sample-namespace.servicebus.windows.net/;SharedAccessKeyName=KeyName;SharedAccessKey=AccessKey`
 - [ ] `Endpoint=sb://sample-namespace.servicebus.windows.net/;Authentication=ManagedIdentity;TransportType=NetMessaging`
-- [x] `Endpoint=sb://sample-namespace.servicebus.windows.net/;Authentication=ManagedIdentity;TransportType=Amqp`
+- [ ] `Endpoint=sb://sample-namespace.servicebus.windows.net/;Authentication=ManagedIdentity;TransportType=Amqp`
 
 Answer: This option utilizes Managed Identity for secure, password-less authentication and AMQP for efficient data transfer, meeting the security standards.  
 `SharedAccessKeyName=KeyName;SharedAccessKey=AccessKey` utilizes Shared Access Keys, which require passwords.
@@ -370,12 +370,12 @@ Question: A healthcare provider is developing a telemedicine application. The ap
 
 Which of the following actions would you implement for this requirement?
 
-- [x] Create a single Service Bus Namespace.
+- [ ] Create a single Service Bus Namespace.
 - [ ] Create a Service Bus Namespace for each medical specialty for which a doctor can receive messages.
-- [x] Create a single Service Bus topic.
+- [ ] Create a single Service Bus topic.
 - [ ] Create a Service Bus topic for each medical specialty for which a doctor can receive messages.
 - [ ] Create a single Service Bus subscription.
-- [x] Create a Service Bus Subscription for each medical specialty for which a doctor can receive messages.
+- [ ] Create a Service Bus Subscription for each medical specialty for which a doctor can receive messages.
 
 Answer: You should first create a Service Bus Namespace. A single namespace is sufficient to manage all the topics and subscriptions. Creating a namespace for each medical specialty would be a maintenance overhead and difficult to manage programmatically.
 
