@@ -100,8 +100,8 @@ Answer:
 
 Question: What options are available for replicating your data only in the primary region?
 
-- [x] Locally redundant storage (LRS)
-- [x] Zone-redundant storage (ZRS)
+- [ ] Locally redundant storage (LRS)
+- [ ] Zone-redundant storage (ZRS)
 - [ ] Geo-redundant storage (GRS)
 - [ ] Geo-zone-redundant storage (GZRS)
 
@@ -116,7 +116,7 @@ Question: Beta Enterprises operates an application in Azure that handles sensiti
 - [ ] Geo-Zone-Redundant Storage (GZRS)
 - [ ] Geo-Redundant Storage with Read Access (GRS-RA)
 - [ ] Geo-Zone-Redundant Storage with Read Access (GZRS-RA)
-- [x] Zone-Redundant Storage (ZRS)
+- [ ] Zone-Redundant Storage (ZRS)
 
 Answer: ZRS is the best choice for Beta Enterprises as it keeps the data within the same region (complying with data residency laws), but also replicates it across different availability zones for high availability. If one zone goes down, the data is still accessible from the other zones. GRS-RA and GZRS-RA wouldn't comply with Beta's data residency requirements because they replicate data to a secondary region which could be outside of their country. LRS would comply with the data residency laws, but it wouldn't provide the desired level of availability as it only maintains replicas within a single data center.
 
@@ -126,7 +126,7 @@ Question: Gamma Corp runs an application that needs to read data from a secondar
 
 - [ ] Locally Redundant Storage (LRS)
 - [ ] Geo-Zone-Redundant Storage (GZRS)
-- [x] Geo-Zone-Redundant Storage with Read Access (GZRS-RA)
+- [ ] Geo-Zone-Redundant Storage with Read Access (GZRS-RA)
 - [ ] Zone-Redundant Storage (ZRS)
 
 Answer: GZRS-RA would best serve Gamma Corp's needs as it not only replicates data across zones in the primary region (for high availability) and to a secondary region (for disaster recovery), but it also provides read access to the secondary region (for performance). GRS does not provide read access to the secondary region, while ZRS and LRS do not replicate data to a secondary region at all.
@@ -138,7 +138,7 @@ Question: ViralTrendz Inc. operates a popular platform for sharing short videos 
 - [ ] Users will not be able to access their videos until the zombie outbreak is resolved.
 - [ ] Users will be able to access their videos as usual because the data has been automatically failed over to the secondary region.
 - [ ] Users will not be able to access their videos because the secondary region only allows read access during normal operations.
-- [x] Users will experience a short period of downtime until a manual failover is performed by ViralTrendz Inc.
+- [ ] Users will experience a short period of downtime until a manual failover is performed by ViralTrendz Inc.
 - [ ] The biggest disaster is ViralTrendz Inc. choosing GRS-RA for this scenario, and now they will have to face angry mob of users as soon as society goes back to normal (if people working there survive)
 
 Answer: With GRS-RA, data is replicated to a secondary region and users have read access to the replicated data in the secondary region during normal operations. However, in the event of an outage at the primary region, a manual failover to the secondary region needs to be performed by the company. Until this failover is performed, users might experience a short period of downtime.
@@ -153,7 +153,7 @@ Answer: With GRS-RA, data is replicated to a secondary region and users have rea
 Question: Facebook, our daily scroll-fest, is powered by Azure's Zone-Redundant Storage (ZRS). However, in an act of divine intervention, the Almighty, having grown disgruntled at humanity's fixation with endless scrolling, decides to express His displeasure. A bolt from the blue strikes and burns down their data center in San Francisco! In this divinely dramatic situation, what could be the fate of Facebook's legions of users, thumbing their way to oblivion? Will they continue to share, like, and comment, or are they due for a surprise digital detox?
 
 - [ ] A forced hiatus on users' social media activities.
-- [x] Life on Facebook continues as if the Almighty's intervention was a mere blip. Users will scroll on, undeterred.
+- [ ] Life on Facebook continues as if the Almighty's intervention was a mere blip. Users will scroll on, undeterred.
 - [ ] Users will find themselves digitally marooned, as the remaining zones, while well-intentioned, buckle under the data weight.
 - [ ] A brief moment of digital silence until Facebook Inc. orchestrates a failover to the unaffected zones.
 - [ ] It turns out, the real misstep might have been Facebook's misguided choice of ZRS for this scenario.
@@ -170,7 +170,7 @@ Question: A company is using Azure Storage services for their data. They are cur
 
 - [ ] The data would be replicated asynchronously to the secondary region after a write operation is committed.
 - [ ] The data would be copied synchronously three times within the primary region.
-- [x] The data would be copied across three Azure availability zones in the primary region, improving disaster resilience.
+- [ ] The data would be copied across three Azure availability zones in the primary region, improving disaster resilience.
 - [ ] The durability of the storage resources would increase to at least 99.99999999999999% (16 9's) over a given year.
 
 Answer: The data would be copied across three Azure availability zones in the primary region, improving disaster resilience.
@@ -186,7 +186,7 @@ Question: Your organization's application uses Azure GZRS storage account. You h
 - [ ] By replicating the data synchronously three times within a single physical location in the primary region.
 - [ ] By replicating the data asynchronously to a single physical location in a secondary region.
 - [ ] By committing a write operation to the primary location before replicating it using LRS.
-- [x] By copying the data across three Azure availability zones in the primary region.
+- [ ] By copying the data across three Azure availability zones in the primary region.
 
 Answer: GZRS improves the availability by storing copies of data across three Azure availability zones. So, even if one zone becomes unavailable, the data is still accessible from the other zones.  
 GZRS does not replicate the data synchronously three times within a single physical location in the primary region.  
@@ -197,10 +197,10 @@ Committing a write operation to the primary location before replicating it using
 
 Question: Which of the following statements are true about Azure Storage redundancy options: LRS, ZRS, GRS, GRS-RA, GZRS, GZRS-RA? Select all that apply.
 
-- [x] ZRS copies data synchronously across multiple data centers within the primary region.
-- [x] GRS copies your data asynchronously to a single physical location in a secondary region.
-- [x] GRS-RA allows read access to your data from the secondary region.
-- [x] GZRS copies data asynchronously to a secondary region and synchronously across three Azure availability zones in the primary region.
+- [ ] ZRS copies data synchronously across multiple data centers within the primary region.
+- [ ] GRS copies your data asynchronously to a single physical location in a secondary region.
+- [ ] GRS-RA allows read access to your data from the secondary region.
+- [ ] GZRS copies data asynchronously to a secondary region and synchronously across three Azure availability zones in the primary region.
 - [ ] GZRS does not replicate data across availability zones in the primary region, only to the secondary.
 - [ ] GZRS replicates data across availability zones in the primary and the secondary regions.
 - [ ] GRS-RA allows read and write operations from the secondary region.
@@ -208,8 +208,8 @@ Question: Which of the following statements are true about Azure Storage redunda
 - [ ] GZRS copies your data asynchronously across three Azure availability zones in the secondary region.
 - [ ] Both ZRS and GZRS copy your data asynchronously across three Azure availability zones in the primary region.
 - [ ] If one of datacenters is temporary offline, ZRS will skip it
-- [x] Both GRS and GZRS use LRS in the secondary region
-- [x] GRS and GZRS are not always up to date with the primary region
+- [ ] Both GRS and GZRS use LRS in the secondary region
+- [ ] GRS and GZRS are not always up to date with the primary region
 - [ ] During failover, GZRS ensures data is always available
 - [ ] Changing redundancy options may cause data loss
 
