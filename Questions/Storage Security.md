@@ -2,8 +2,8 @@
 
 Question: Suppose you are an Azure Architect and you are transferring patient medical data from one hospital to another using Azure services. What method(s) should you use to secure the data?
 
-- [x] Encryption-at-rest
-- [x] Encryption-in-transit
+- [ ] Encryption-at-rest
+- [ ] Encryption-in-transit
 - [ ] No encryption is necessary
 
 Answer: Both encryption-at-rest and encryption-in-transit. When dealing with sensitive data, especially healthcare data, it's necessary to ensure maximum security both while the data is in storage and while it's being transferred. Therefore, you would use encryption-at-rest to secure the data when it's stored and encryption-in-transit to secure it while it's moving.
@@ -12,9 +12,9 @@ Answer: Both encryption-at-rest and encryption-in-transit. When dealing with sen
 
 Question: Your company is migrating all data to Azure Storage and wants to ensure the security of the data both during and after migration. What Azure features should you utilize to ensure the data's security during and after migration?
 
-- [x] Azure Storage Service Encryption (SSE) for data at rest
-- [x] Transport Layer Security (TLS) for data in transit
-- [x] Azure Key Vault for managing cryptographic keys
+- [ ] Azure Storage Service Encryption (SSE) for data at rest
+- [ ] Transport Layer Security (TLS) for data in transit
+- [ ] Azure Key Vault for managing cryptographic keys
 - [ ] Microsoft Entra ID for user access control
 - [ ] Azure Traffic Manager for network optimization
 
@@ -28,7 +28,7 @@ Question: Your company is storing sensitive user data in an Azure SQL Database a
 
 - [ ] Use Azure Storage Service Encryption (SSE) for data in transit to the analytics service and Azure Key Vault for data at rest in Azure SQL Database.
 - [ ] Use Transport Layer Security (TLS) for data at rest in Azure SQL Database and Azure Storage Service Encryption (SSE) for data in transit to the analytics service.
-- [x] Use Transport Layer Security (TLS) for data in transit to the analytics service and Azure Storage Service Encryption (SSE) for data at rest in Azure SQL Database.
+- [ ] Use Transport Layer Security (TLS) for data in transit to the analytics service and Azure Storage Service Encryption (SSE) for data at rest in Azure SQL Database.
 - [ ] Use Azure Key Vault for data in transit to the analytics service and Transport Layer Security (TLS) for data at rest in Azure SQL Database.
 
 Answer: Use Transport Layer Security (TLS) for data in transit to the analytics service and Azure Storage Service Encryption (SSE) for data at rest in Azure SQL Database. Transport Layer Security (TLS) is meant to secure data when it's in transit i.e., when it's being moved from one place to another over a network. In this case, it's used when the data is being sent to the analytics service. On the other hand, Azure Storage Service Encryption (SSE) is designed to protect data at rest i.e., when it's stored and not moving. In this case, it's used to secure the data that is stored in Azure SQL Database.  
@@ -39,7 +39,7 @@ Other options are incorrect because they mix-up the roles of encryption-at-rest 
 Question: Your company is using Azure Storage and wants to serve data to users via a custom domain name while also ensuring encryption in transit. Which service should you utilize for this purpose?
 
 - [ ] Native Azure Storage functionality
-- [x] Azure CDN
+- [ ] Azure CDN
 - [ ] Azure Key Vault
 - [ ] Azure Traffic Manager
 
@@ -53,7 +53,7 @@ Azure Traffic Manager is for network routing optimization and does not manage en
 Question: Your global company is using Azure Storage and wants to ensure that data is served to users secureky and quickly regardless of their location. Which service should you use?
 
 - [ ] Azure Functions
-- [x] Azure CDN
+- [ ] Azure CDN
 - [ ] Native Azure Storage functionality with TLS
 - [ ] Azure Key Vault
 - [ ] Azure Virtual Network
@@ -68,7 +68,7 @@ Azure Virtual Network is for creating isolated networks, not for distributing co
 Question:Your company is using Azure Storage and needs to securely distribute a large amount of content to numerous users simultaneously (large-scale distribution). Which service should you use?
 
 - [ ] Azure Storage Account Replication
-- [x] Azure CDN
+- [ ] Azure CDN
 - [ ] Native Azure Storage functionality with TLS
 - [ ] Azure Data Factory
 - [ ] Azure File Sync
@@ -83,7 +83,7 @@ Azure File Sync is used to centralize file services in Azure while maintaining l
 Question: Your company is concerned about DDoS attacks on its Azure Storage. Which service should you use to add a layer of protection against such attacks?
 
 - [ ] Azure DDoS Protection Standard
-- [x] Azure CDN
+- [ ] Azure CDN
 - [ ] Native Azure Storage functionality with TLS
 - [ ] Azure Advanced Threat Protection
 - [ ] Azure Firewall
@@ -98,7 +98,7 @@ Azure Firewall is a managed, cloud-based network security service, but does not 
 Question: Your company is using Azure Storage and wants to optimize secure data transfer costs for high volume. Which service should you consider to potentially reduce costs?
 
 - [ ] Azure Cost Management
-- [x] Azure CDN
+- [ ] Azure CDN
 - [ ] Native Azure Storage functionality with TLS
 - [ ] Azure Reservations
 - [ ] Azure Budgets
@@ -115,7 +115,7 @@ Question: Your company stores data in Azure and needs to ensure the data's secur
 - [ ] Azure Storage Service Encryption (SSE)
 - [ ] Azure Key Vault
 - [ ] Azure CDN
-- [x] Native Azure Storage functionality with TLS
+- [ ] Native Azure Storage functionality with TLS
 
 Answer: When a custom domain is not needed, Azure Storage natively supports encryption in transit using Transport Layer Security (TLS).  
 Azure Storage Service Encryption (SSE) is used for encryption at rest, not for encryption in transit.  
@@ -127,7 +127,7 @@ Azure CDN is used for content distribution and can provide encryption in transit
 Question: Your company uses Azure Storage and wants to serve data from a custom domain. Which service should you use for this requirement?
 
 - [ ] Azure Storage Account Geo-redundancy
-- [x] Azure CDN
+- [ ] Azure CDN
 - [ ] Native Azure Storage functionality with TLS
 - [ ] Azure Traffic Manager
 - [ ] Azure Load Balancer
